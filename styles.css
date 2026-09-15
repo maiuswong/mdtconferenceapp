@@ -720,6 +720,76 @@ body.topbar-compact .track-chip {
 .session-card.search-hidden { display: none; }
 .session-card.has-details::after { content: none; }
 
+.short-session-marker .session-card {
+    background: var(--card-bg);
+    border: none;
+    box-shadow:
+        0 1px 2px rgba(15, 23, 42, 0.04),
+        0 3px 8px rgba(15, 23, 42, 0.07);
+    padding: 12px 16px;
+}
+
+.short-session-marker .card-top,
+.short-session-marker .session-title,
+.short-session-marker .card-bottom {
+    display: none;
+}
+
+.short-session-marker .track-stripe {
+    left: 4px;
+    top: 4px;
+    bottom: 4px;
+}
+
+.short-session-callout .session-card {
+    align-self: start;
+    min-height: 0;
+    height: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px dashed #7b8794;
+    box-shadow: none;
+    padding: 10px 12px;
+    backdrop-filter: blur(2px);
+}
+
+.short-session-callout-card:hover {
+    box-shadow: 0 2px 8px rgba(51, 65, 85, 0.12);
+}
+
+.short-session-callout-card .session-title {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+}
+
+.short-session-callout-card .track-badge {
+    flex: 0 0 auto;
+    margin-bottom: 3px;
+}
+
+.short-session-callout::before {
+    content: '';
+    position: absolute;
+    top: var(--short-session-leader-offset, 50%);
+    left: -10px;
+    width: 10px;
+    border-top: 2px dashed #7b8794;
+    pointer-events: none;
+}
+
+.short-session-callout:has(.points-left)::before {
+    left: auto;
+    right: -10px;
+}
+
+.short-session-callout-time {
+    margin-top: 4px;
+    color: var(--text-secondary);
+    font-family: 'Google Sans', sans-serif;
+    font-size: 10px;
+    line-height: 1.25;
+}
+
 .track-stripe {
     position: absolute;
     left: 4px;
@@ -1714,6 +1784,11 @@ body.topbar-compact .track-chip {
     color: var(--text-main);
 }
 
+.details-meta .medtronic-author {
+    color: #1769aa;
+    font-weight: 700;
+}
+
 .details-abstract {
     font-size: 13px;
     line-height: 1.65;
@@ -2690,6 +2765,21 @@ body.topbar-compact .track-chip {
     color: var(--text-main);
     font-size: 0.82rem;
 }
+.nn-share-btn {
+    appearance: none;
+    border: 1px solid #c7d8fc;
+    border-radius: 6px;
+    background: #eef4ff;
+    color: var(--primary);
+    padding: 5px 8px;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+}
+.nn-share-btn:hover { background: #dbe7ff; color: #1a4fb8; }
+.nn-share-btn:active { background: #c7d8fc; transform: scale(0.96); }
 .nn-empty {
     padding: 18px 16px;
     border: 1px dashed var(--border);

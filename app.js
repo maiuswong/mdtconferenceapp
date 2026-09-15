@@ -10,7 +10,7 @@ if ('scrollRestoration' in history) {
 // today-anchored dummy schedule. Useful for continuing development
 // after the conference has ended. Edit `buildDummyData()` below to
 // tweak times, tracks, conflicts, etc.
-const USE_DUMMY_DATA = true;
+const USE_DUMMY_DATA = false ;
 
 // Override which calendar date the dummy schedule's "Day 1" anchors
 // to. Set to a 'YYYY-MM-DD' string (e.g. '2026-04-30') to pin the
@@ -263,6 +263,13 @@ const data = USE_DUMMY_DATA ? buildDummyData() : REAL_DATA;
 // yellow) shifts to a vivid neon-cyan instead.
 const trackColors = {
     "general": "#b7bec8",
+    "innovation summit": "#3949AB",
+    "featured keynote": "#3949AB",
+    "session": "#00897B",
+    "roundtable": "#C2185B",
+    "hot takes exchange": "#EF6C00",
+    "pitch competition": "#1565C0",
+    "hrx ap shark tank": "#6A1B9A",
     "sponsor": "#42c5f5",
     "training": "#f542e3",
     "ai/ml": "#FF2A54",
@@ -280,6 +287,14 @@ const KEYNOTE_COLOR = '#3949AB';           // Indigo 600 — distinct from any t
 
 // ─── ROOM ORDER (consistent columns) ───
 const ROOM_ORDER = [
+    "Hyde Park",
+    "Main Stage 1",
+    "Main Stage 2",
+    "Roundtable 1",
+    "Roundtable 2",
+    "Roundtable 3",
+    "ConneXions Lounge",
+    "HRStv Studio",
     "Grand Foyer",
     "Junior Ballroom",
     "Salon A",
@@ -469,9 +484,18 @@ function getSessionAccentColor(session, fallbackTrackName = '') {
     return getTrackColor(fallbackTrackName || session?.Track || session?.type || '');
 }
 
+function getSessionRooms(session) {
+    const roomLabel = String(session?.room || '');
+    const listedRooms = roomLabel.replace(/^Abstract Happy Hour\s*[–-]\s*/, '');
+    if (listedRooms !== roomLabel) {
+        return listedRooms.split(',').map(room => room.trim()).filter(Boolean);
+    }
+    return session?.room ? [session.room] : [];
+}
+
 function getRoomsForDay(day) {
     const sessions = data[day] || [];
-    const roomsUsed = new Set(sessions.map(s => s.room).filter(Boolean));
+    const roomsUsed = new Set(sessions.flatMap(getSessionRooms));
     // Known rooms first (in canonical ROOM_ORDER), then any unknown
     // rooms in alphabetical order. ROOM_ORDER is a hint for the
     // original conference layout — unknown rooms still need to render
@@ -492,11 +516,11 @@ function getAllTracksForDay(day) {
 
 function parseClockMinutes(timeString) {
     if (!timeString) return 0;
-    const [timePart, meridiem] = timeString.split(' ');
-    const [hourText, minuteText] = timePart.split(':');
-    let hour = parseInt(hourText, 10);
-    const minutes = parseInt(minuteText, 10);
-    const isPm = meridiem === 'PM';
+    const match = String(timeString).match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+    if (!match) return 0;
+    let hour = parseInt(match[1], 10);
+    const minutes = parseInt(match[2], 10);
+    const isPm = match[3].toUpperCase() === 'PM';
     if (isPm && hour !== 12) hour += 12;
     if (!isPm && hour === 12) hour = 0;
     return hour * 60 + minutes;
@@ -530,6 +554,15 @@ function parseDurationMinutes(lengthValue) {
     return total || null;
 }
 
+function parseTimeRangeDuration(timeValue) {
+    const matches = String(timeValue || '').match(/\d{1,2}:\d{2}\s*(?:AM|PM)/gi);
+    if (!matches || matches.length < 2) return null;
+    const startMinutes = parseClockMinutes(matches[0]);
+    const endMinutes = parseClockMinutes(matches[1]);
+    const duration = endMinutes - startMinutes;
+    return duration > 0 ? duration : null;
+}
+
 function getDefaultDurationMinutes(dayTimes, session) {
     const sortedTimes = sortTimes(dayTimes);
     const startMinutes = parseClockMinutes(session.time);
@@ -540,6 +573,7 @@ function getDefaultDurationMinutes(dayTimes, session) {
 
 function getExplicitDurationMinutes(session) {
     return (
+        parseTimeRangeDuration(session.time) ||
         parseDurationMinutes(session.DurationMinutes) ||
         parseDurationMinutes(session.Duration) ||
         parseDurationMinutes(session.SessionLength)
@@ -560,6 +594,7 @@ function getBreakDisplayTitle(session) {
 
 function isBreakStyleEvent(session) {
     const title = (session.Title || '').toLowerCase();
+    if (/\babstract\s+(?:lunch|happy)\s+hour\b/.test(title)) return false;
     return session.type === 'break' || /\bbreakfast\b|\blunch\b|\bbreak\b|\bbanquet\b/.test(title);
 }
 
@@ -703,7 +738,7 @@ function buildDetailsHtml(session) {
     const hasAbstract = abstractText && abstractText.toLowerCase() !== 'nan';
     meta.push(`<div><strong>When:</strong> ${escapeHtml(session.day || currentView)}, ${escapeHtml(session.time || '')}</div>`);
     if (session.room) meta.push(`<div><strong>Room:</strong> ${escapeHtml(session.room)}</div>`);
-    if (session.Authors) meta.push(`<div><strong>Authors:</strong> ${escapeHtml(session.Authors)}</div>`);
+    if (session.Authors) meta.push(`<div><strong>Authors:</strong> ${buildAuthorsHtml(session)}</div>`);
     if (session.Affiliation) meta.push(`<div><strong>Affiliation:</strong> ${escapeHtml(session.Affiliation)}</div>`);
     if (session.SessionLength) meta.push(`<div><strong>Length:</strong> ${escapeHtml(session.SessionLength)}</div>`);
 
@@ -718,6 +753,28 @@ function buildDetailsHtml(session) {
             </div>
         </div>
     `;
+}
+
+function buildAuthorsHtml(session) {
+    const affiliations = String(session.Affiliation || '').split(';').map(value => value.trim());
+    const authorParts = String(session.Authors).split(',').map(value => value.trim()).filter(Boolean);
+    const credentialPattern = /^(?:MD|DO|PhD|MPH|MS|MSEE|MBA|RN|NP|PA(?:-C)?|PAC|FHRS|FACC|FAHA|FCCP|II|III|IV)$/i;
+    const authors = [];
+
+    authorParts.forEach(part => {
+        if (authors.length && credentialPattern.test(part)) {
+            authors[authors.length - 1] += `, ${part}`;
+        } else {
+            authors.push(part);
+        }
+    });
+
+    if (authors.length !== affiliations.length) return escapeHtml(session.Authors);
+
+    return authors.map((author, index) => {
+        const className = /medtronic/i.test(affiliations[index]) ? 'medtronic-author' : '';
+        return `<span class="${className}">${escapeHtml(author)}</span>`;
+    }).join(', ');
 }
 
 function updateSessionTitleLayout() {
@@ -1607,6 +1664,7 @@ function renderDesktopDayGrid(day, container) {
     const normalSessions = [];
     const overlaySessions = [];
     const breakSessions = [];
+    const shortCalloutReservations = [];
 
     sessions.forEach(session => {
         if (isGlobalOverlayEvent(session)) {
@@ -1629,7 +1687,12 @@ function renderDesktopDayGrid(day, container) {
         wrap.dataset.time = originalSession.time;
         wrap.dataset.room = originalSession.room;
 
-        if (isAdSpanSession && salonAIndex !== undefined && salonDIndex !== undefined) {
+        const sessionRooms = getSessionRooms(originalSession);
+        const spannedRoomIndexes = sessionRooms.map(room => roomIndexMap.get(room)).filter(index => index !== undefined);
+        if (spannedRoomIndexes.length > 1) {
+            wrap.style.gridColumn = `${Math.min(...spannedRoomIndexes) + 2} / ${Math.max(...spannedRoomIndexes) + 3}`;
+            wrap.classList.add('ad-span-item');
+        } else if (isAdSpanSession && salonAIndex !== undefined && salonDIndex !== undefined) {
             wrap.style.gridColumn = `${salonAIndex + 2} / ${salonDIndex + 3}`;
             wrap.classList.add('ad-span-item');
         } else {
@@ -1641,6 +1704,111 @@ function renderDesktopDayGrid(day, container) {
         wrap.style.gridRow = `${placement.startSlot} / span ${placement.slotSpan}`;
         wrap.appendChild(createSessionCard(originalSession, false));
         grid.appendChild(wrap);
+    };
+
+    const placeMultiRoomSession = (session) => {
+        const sessionStart = parseClockMinutes(session.time);
+        const sessionEnd = sessionStart + getSessionDurationMinutes(dayTimes, session);
+        const placement = getPlacementForRange(sessionStart, sessionEnd);
+        const targetRooms = new Set(getSessionRooms(session));
+        const occupiedRooms = new Set();
+
+        normalSessions.forEach(other => {
+            if (other === session) return;
+            const otherStart = parseClockMinutes(other.time);
+            const otherEnd = otherStart + getSessionDurationMinutes(dayTimes, other);
+            if (otherStart >= sessionEnd || otherEnd <= sessionStart) return;
+            getSessionRooms(other).forEach(room => occupiedRooms.add(room));
+        });
+
+        let runStart = null;
+        const placeRun = (start, end) => {
+            const wrap = document.createElement('div');
+            wrap.className = 'schedule-item ad-span-item';
+            wrap.dataset.day = day;
+            wrap.dataset.time = session.time;
+            wrap.dataset.room = session.room;
+            wrap.style.gridColumn = `${start + 2} / ${end + 3}`;
+            wrap.style.gridRow = `${placement.startSlot} / span ${placement.slotSpan}`;
+            wrap.appendChild(createSessionCard(session, false));
+            grid.appendChild(wrap);
+        };
+
+        colRooms.forEach((room, index) => {
+            if (targetRooms.has(room) && !occupiedRooms.has(room)) {
+                if (runStart === null) runStart = index;
+            } else if (runStart !== null) {
+                placeRun(runStart, index - 1);
+                runStart = null;
+            }
+        });
+        if (runStart !== null) placeRun(runStart, colRooms.length - 1);
+    };
+
+    const findShortSessionCallout = (session, sessionStart, durationMinutes, sourceRoom) => {
+        const sourceIndex = roomIndexMap.get(sourceRoom);
+        if (sourceIndex === undefined) return null;
+        const estimatedTitleLines = Math.ceil(String(session.Title || '').length / 26);
+        const calloutPixels = 58 + (estimatedTitleLines * 19);
+        const calloutDuration = Math.max(
+            15,
+            durationMinutes,
+            Math.ceil(calloutPixels / 28) * SLOT_MINUTES
+        );
+        const offsets = [0, -calloutDuration, 5, -5, 10, -10, 15, -15, 20, -20, 25, -25, 30, -30];
+
+        for (const offset of offsets) {
+            const start = sessionStart + offset;
+            const end = start + calloutDuration;
+            if (start < baseSlotMetrics.dayStart) continue;
+            for (let distance = 1; distance < colRooms.length; distance += 1) {
+                for (const roomIndex of [sourceIndex + distance, sourceIndex - distance]) {
+                    const room = colRooms[roomIndex];
+                    if (!room) continue;
+                    const isOccupied = normalSessions.some(other => {
+                        if (other === session || !getSessionRooms(other).includes(room)) return false;
+                        const otherStart = parseClockMinutes(other.time);
+                        const otherEnd = otherStart + getSessionDurationMinutes(dayTimes, other);
+                        return otherStart < end && otherEnd > start;
+                    }) || shortCalloutReservations.some(reservation =>
+                        reservation.room === room && reservation.start < end && reservation.end > start
+                    );
+                    if (!isOccupied) return { room, roomIndex, start, end };
+                }
+            }
+        }
+        return null;
+    };
+
+    const placeShortSessionCallout = (session, sessionStart, sessionEnd, placement) => {
+        const durationMinutes = sessionEnd - sessionStart;
+        const target = findShortSessionCallout(session, sessionStart, durationMinutes, session.room);
+        if (!target) return false;
+
+        const marker = document.createElement('div');
+        marker.className = 'schedule-item short-session-marker';
+        marker.dataset.day = day;
+        marker.dataset.time = session.time;
+        marker.dataset.room = session.room;
+        marker.style.gridColumn = `${roomIndexMap.get(session.room) + 2}`;
+        marker.style.gridRow = `${placement.startSlot} / span ${placement.slotSpan}`;
+        marker.appendChild(createSessionCard(session, false));
+        grid.appendChild(marker);
+
+        const calloutPlacement = getPlacementForRange(target.start, target.end);
+        const callout = document.createElement('div');
+        callout.className = 'schedule-item short-session-callout';
+        callout.dataset.day = day;
+        callout.dataset.time = session.time;
+        callout.dataset.room = target.room;
+        callout.style.gridColumn = `${target.roomIndex + 2}`;
+        callout.style.gridRow = `${calloutPlacement.startSlot} / span ${calloutPlacement.slotSpan}`;
+        const markerCenterOffset = (placement.startSlot - calloutPlacement.startSlot + (placement.slotSpan / 2)) * 28;
+        callout.style.setProperty('--short-session-leader-offset', `${markerCenterOffset}px`);
+        callout.appendChild(createShortSessionCalloutCard(session, target.roomIndex < roomIndexMap.get(session.room)));
+        grid.appendChild(callout);
+        shortCalloutReservations.push(target);
+        return true;
     };
 
     const placeSession = (session, overlay = false) => {
@@ -1660,10 +1828,17 @@ function renderDesktopDayGrid(day, container) {
             return;
         }
 
+        if (getSessionRooms(session).length > 1) {
+            placeMultiRoomSession(session);
+            return;
+        }
+
         const sessionStart = parseClockMinutes(session.time);
         const sessionEnd = sessionStart + getSessionDurationMinutes(dayTimes, session);
         const placement = getPlacementForRange(sessionStart, sessionEnd);
         const isAdSpanSession = session.room === 'Grand Ballroom - Salons A-D';
+        const sessionRooms = getSessionRooms(session);
+        const spannedRoomIndexes = sessionRooms.map(room => roomIndexMap.get(room)).filter(index => index !== undefined);
 
         const wrap = document.createElement('div');
         wrap.className = 'schedule-item';
@@ -1672,8 +1847,16 @@ function renderDesktopDayGrid(day, container) {
         wrap.dataset.time = session.time;
         wrap.dataset.room = session.room;
 
+        const isShortTitleSession = !overlay
+            && spannedRoomIndexes.length === 1
+            && placement.slotSpan <= 2;
+        if (isShortTitleSession && placeShortSessionCallout(session, sessionStart, sessionEnd, placement)) return;
+
         if (isGlobalOverlayEvent(session)) {
             wrap.style.gridColumn = '2 / -1';
+        } else if (spannedRoomIndexes.length > 1) {
+            wrap.style.gridColumn = `${Math.min(...spannedRoomIndexes) + 2} / ${Math.max(...spannedRoomIndexes) + 3}`;
+            wrap.classList.add('ad-span-item');
         } else if (isAdSpanSession && salonAIndex !== undefined && salonDIndex !== undefined) {
             wrap.style.gridColumn = `${salonAIndex + 2} / ${salonDIndex + 3}`;
             wrap.classList.add('ad-span-item');
@@ -1903,6 +2086,16 @@ function buildNowNextSectionHeader(title, headerMeta, items, opts) {
         metaEl.className = 'nn-section-time';
         metaEl.textContent = headerMeta;
         header.appendChild(metaEl);
+    }
+
+    if (title === 'Happening Now') {
+        const shareBtn = document.createElement('button');
+        shareBtn.type = 'button';
+        shareBtn.className = 'nn-share-btn';
+        shareBtn.textContent = 'Share';
+        shareBtn.setAttribute('aria-label', 'Share my schedule with a QR code');
+        shareBtn.onclick = shareStarredSchedule;
+        header.appendChild(shareBtn);
     }
     return header;
 }
@@ -2680,7 +2873,7 @@ function getPrevPathActiveItems(path, t) {
     return [];
 }
 
-function buildOtherSessionsBranch(others) {
+function buildOtherSessionsBranch(others, timeRange = '') {
     // A single timeline node representing the parallel non-starred
     // concurrent sessions. Hollow "branch" dot (ring) on the rail signals
     // these are off your path. Tap to expand into the full list of rows.
@@ -2708,7 +2901,8 @@ function buildOtherSessionsBranch(others) {
 
     const label = document.createElement('span');
     label.className = 'nn-branch-label';
-    label.textContent = `${others.length} other ${others.length === 1 ? 'session' : 'sessions'}`;
+    const countLabel = `${others.length} other ${others.length === 1 ? 'session' : 'sessions'}`;
+    label.textContent = timeRange ? `${timeRange} · ${countLabel}` : countLabel;
     main.appendChild(label);
 
     // Track dots preview — unique track colors at this time slot.
@@ -3301,7 +3495,16 @@ function buildNowNextList(items, opts = {}) {
     });
 
     if (others.length) {
-        list.appendChild(buildOtherSessionsBranch(others));
+        const groups = Array.isArray(opts.otherSessionGroups)
+            ? opts.otherSessionGroups
+            : null;
+        if (groups && groups.length) {
+            groups.forEach(group => {
+                list.appendChild(buildOtherSessionsBranch(group.items, group.timeRange));
+            });
+        } else {
+            list.appendChild(buildOtherSessionsBranch(others));
+        }
     }
 
     return list;
@@ -4267,7 +4470,10 @@ function buildForcedEdgeRow(item, prevPathItem, t) {
     if (!fromRoom) verb = 'Head to';
     else if (fromRoom === toRoom) verb = 'Stay in';
     else verb = 'Switch to';
-    const midSession = item.win && item.win.start.getTime() < t.getTime();
+    const isContinuing = !!(prevPathItem && prevPathItem.session
+        && prevPathItem.session.uid === item.session.uid);
+    const midSession = !isContinuing && item.win
+        && item.win.start.getTime() < t.getTime();
     // Leaving early: the prior session continues past this
     // transition. Skip if the predecessor IS this same item
     // (continuing, not leaving) or has no end after t.
@@ -4335,7 +4541,7 @@ function renderPathNodeRows(wrap, nodes) {
                 prevPathItem: n.prevPathItem
             }));
         } else if (n.kind === 'forced') {
-            wrap.appendChild(buildForcedEdgeRow(n.item, n.prevPathItem, n.t));
+            wrap.appendChild(buildForcedEdgeRow(n.item, n.prevPathItem || null, n.t));
         }
     });
 }
@@ -4496,6 +4702,40 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
             // through this node, surface it so the slot doesn't read
             // as free time.
             const slotItems = withContinuing(group.items, path, group.startDate);
+            const isFreeOnlyGroup = !chosenAt
+                && freshFeatured.length === 0
+                && !onlyBreaksFresh;
+            let freeSlotGroups = null;
+            let freeSlotEnd = null;
+            let finalFreeSlotStart = group.startDate;
+
+            if (isFreeOnlyGroup) {
+                freeSlotGroups = [];
+                let candidateGroup = group;
+                while (candidateGroup && candidateGroup.items.length) {
+                    const candidateEnd = new Date(Math.max(...candidateGroup.items.map(item => item.win.end.getTime())));
+                    freeSlotGroups.push({
+                        items: candidateGroup.items,
+                        timeRange: `${candidateGroup.startDate.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })} – ${candidateEnd.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`
+                    });
+                    freeSlotEnd = !freeSlotEnd || candidateEnd > freeSlotEnd
+                        ? candidateEnd
+                        : freeSlotEnd;
+                    finalFreeSlotStart = candidateGroup.startDate;
+
+                    const nextGroup = findNextStartGroup(dayItems, candidateGroup.startDate);
+                    if (!nextGroup.items.length) break;
+                    const nextStart = nextGroup.startDate.getTime();
+                    const nextInterval = path.intervals.find(interval =>
+                        interval.start.getTime() <= nextStart && nextStart < interval.end.getTime());
+                    const nextChosen = nextInterval && nextInterval.chosen;
+                    const nextFeatured = partitionFeaturedItems(nextGroup.items).featured;
+                    const nextIsBreak = nextGroup.items.every(item => item.session
+                        && (isBreakStyleEvent(item.session) || isMealStyleEvent(item.session)));
+                    if (nextChosen || nextFeatured.length || nextIsBreak) break;
+                    candidateGroup = nextGroup;
+                }
+            }
 
             const slotEnd = Math.max(...slotItems.map(i => i.win.end.getTime()));
             const isPast = slotEnd <= now.getTime();
@@ -4504,8 +4744,6 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
                 + (isPast ? ' is-past' : '')
                 + (isCurrent ? ' is-current' : '');
 
-            const time = group.startDate.toLocaleTimeString(
-                [], { hour: 'numeric', minute: '2-digit' });
             // If the chosen path session strictly covers this slot
             // (started earlier, ends later), any break/meal items in
             // this slot are being skipped — render them muted.
@@ -4515,9 +4753,32 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
             const chosenCoversSlot = !!(chosenItemAt && chosenItemAt.win
                 && chosenItemAt.win.start.getTime() < slotT
                 && chosenItemAt.win.end.getTime() > slotT);
+            const previousChosenItem = !chosenAt && freshFeatured.length === 0
+                ? getPrevPathItem(path, group.startDate)
+                : null;
+            const freeStartOverride = previousChosenItem
+                && previousChosenItem.win.end < group.startDate
+                ? previousChosenItem.win.end
+                : null;
+            const time = (freeStartOverride || group.startDate).toLocaleTimeString(
+                [], { hour: 'numeric', minute: '2-digit' });
+            if (chosenCoversSlot
+                && chosenAt === lastShownChosenUid
+                && freshFeatured.length === 0
+                && !slotNodes.some(n => n.t.getTime() === slotT)) {
+                slotNodes.push({
+                    kind: 'forced',
+                    item: chosenItemAt,
+                    prevPathItem: chosenItemAt,
+                    t: group.startDate
+                });
+            }
             const header = buildNowNextSectionHeader(time, '', slotItems);
             const body = buildNowNextList(slotItems, {
                 freeChipMaxEnd: findNextAttendedStart(dayItems, group.startDate),
+                freeChipStartOverride: freeStartOverride,
+                freeChipEndOverride: freeSlotEnd,
+                otherSessionGroups: freeSlotGroups,
                 skipBreaks: chosenCoversSlot,
                 hideRowTime: true
             });
@@ -4534,9 +4795,13 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
             const isStayBridge = !!(prevSection
                 && lastShownChosenUid
                 && chosenAt === lastShownChosenUid
-                && slotNodes.some(n => n.kind === 'decision'
-                    && n.decision.chosen === lastShownChosenUid
-                    && n.decision.start.getTime() === slotT));
+                && slotNodes.some(n =>
+                    (n.kind === 'decision'
+                        && n.decision.chosen === lastShownChosenUid
+                        && n.decision.start.getTime() === slotT)
+                    || (n.kind === 'forced'
+                        && n.item?.session?.uid === lastShownChosenUid
+                        && n.t.getTime() === slotT)));
 
             // Split nodes into "between" (occurring strictly before
             // this slot's start, i.e. at intermediate path-only
@@ -4703,7 +4968,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
             lastShownSlotT = slotT;
             prevSection = section;
 
-            cursor = new Date(group.startDate.getTime());
+            cursor = new Date(finalFreeSlotStart.getTime());
         }
         // After the slot loop, emit any path nodes that occur after
         // the last rendered slot (e.g. a starred session ending and
@@ -5643,6 +5908,32 @@ function createFullWidthCard(s) {
             openSessionDetails(s, card);
         };
     }
+    return card;
+}
+
+function createShortSessionCalloutCard(session, pointsLeft) {
+    const card = document.createElement('div');
+    card.className = 'session-card short-session-callout-card' + (pointsLeft ? ' points-left' : '');
+    card.dataset.uid = session.uid || '';
+    card.dataset.track = (session.Track || '').toLowerCase();
+    card.dataset.title = (session.Title || '').toLowerCase();
+    card.dataset.authors = (session.Authors || '').toLowerCase();
+
+    const track = document.createElement('div');
+    track.className = 'track-badge';
+    track.style.color = getSessionAccentColor(session, session.Track);
+    track.textContent = session.Track || 'Session';
+
+    const title = document.createElement('div');
+    title.className = 'session-title';
+    title.textContent = session.Title || 'Session';
+
+    const time = document.createElement('div');
+    time.className = 'short-session-callout-time';
+    time.textContent = `${formatTime(session.time)} · ${session.room}`;
+
+    card.append(track, title, time);
+    card.onclick = () => openSessionDetails(session, card);
     return card;
 }
 
