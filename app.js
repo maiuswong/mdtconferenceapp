@@ -262,14 +262,18 @@ const data = USE_DUMMY_DATA ? buildDummyData() : REAL_DATA;
 // and small dots become hard to read). Beyond the System (formerly
 // yellow) shifts to a vivid neon-cyan instead.
 const trackColors = {
-    "general": "#b7bec8",
+    "general": "#455A64",
     "innovation summit": "#3949AB",
-    "featured keynote": "#3949AB",
+    "featured keynote": "#8E24AA",
     "session": "#00897B",
-    "roundtable": "#C2185B",
-    "hot takes exchange": "#EF6C00",
-    "pitch competition": "#1565C0",
-    "hrx ap shark tank": "#6A1B9A",
+    "roundtable": "#D81B60",
+    "roundtable session": "#C2185B",
+    "hot takes exchange": "#E64A19",
+    "pitch competition": "#6D4C41",
+    "shark tank": "#5E35B1",
+    "abstract happy hour": "#FFB300",
+    "abstract lunch hour": "#0097A7",
+    "late-breaking clinical trial": "#689F38",
     "sponsor": "#42c5f5",
     "training": "#f542e3",
     "ai/ml": "#FF2A54",
@@ -461,8 +465,10 @@ function updateTopbarMode() {
 
 function getTrackColor(trackName) {
     if (!trackName) return '#9AA0A6';
+    const normalizedTrack = trackName.toLowerCase();
+    if (trackColors[normalizedTrack]) return trackColors[normalizedTrack];
     for (const k in trackColors) {
-        if (trackName.toLowerCase().includes(k)) return trackColors[k];
+        if (normalizedTrack.includes(k)) return trackColors[k];
     }
     return '#9AA0A6';
 }
@@ -5010,7 +5016,7 @@ function renderMobileDayList(day, container) {
 
         const label = document.createElement('div');
         label.className = 'time-col'; 
-        label.textContent = formatTime(time);
+        label.textContent = formatStartTime(time);
         group.appendChild(label);
 
         const stack = document.createElement('div');
@@ -5088,7 +5094,7 @@ function renderGlobalSearchResults(container) {
 
                 const label = document.createElement('div');
                 label.className = 'time-col';
-                label.textContent = formatTime(time);
+                label.textContent = formatStartTime(time);
                 group.appendChild(label);
 
                 const stack = document.createElement('div');
@@ -5119,7 +5125,7 @@ function renderGlobalSearchResults(container) {
 
             const tCol = document.createElement('div');
             tCol.className = 'time-col';
-            tCol.textContent = formatTime(time);
+            tCol.textContent = formatStartTime(time);
             row.appendChild(tCol);
 
             const wrap = document.createElement('div');
@@ -5670,7 +5676,7 @@ function renderStarredView(container) {
                 if (hasCluster) {
                     label.classList.add('time-col-empty');
                 } else {
-                    label.textContent = formatTime(time);
+                    label.textContent = formatStartTime(time);
                 }
                 group.appendChild(label);
 
@@ -5720,7 +5726,7 @@ function renderStarredView(container) {
             if (hasCluster) {
                 tCol.classList.add('time-col-empty');
             } else {
-                tCol.textContent = formatTime(time);
+                tCol.textContent = formatStartTime(time);
             }
             row.appendChild(tCol);
 
@@ -6308,7 +6314,7 @@ function updateScrollDateTimeIndicator() {
     }
 
     const dayLabel = (selected.dataset.day || '').trim();
-    const timeLabel = formatTime((selected.dataset.time || '').trim());
+    const timeLabel = formatStartTime((selected.dataset.time || '').trim());
     const showCompactDay = isGlobalSearchMode;
     const compactDay = showCompactDay ? formatCompactDayLabel(dayLabel) : '';
     const twoLineMode = false;
@@ -6454,6 +6460,11 @@ function checkTrackMatch(cardTrack) {
 function formatTime(t) {
     // Shorten for display: "8:00 AM" → "8:00"
     return t.replace(' AM', 'a').replace(' PM', 'p');
+}
+
+function formatStartTime(t) {
+    const [start] = String(t || '').split(/\s*[–-]\s*/, 1);
+    return formatTime(start);
 }
 
 function formatCompactDayLabel(dayLabel) {

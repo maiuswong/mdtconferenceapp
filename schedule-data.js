@@ -7,12 +7,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Innovation Summit",
       "Title": "Innovation Summit Session I: Mapping, Imaging, and Ablation",
+      "Abstract": "A rapid-fire tour of the technologies reshaping AF care. From predictive planning and 4D imaging to global mapping, digital models, novel PFA, neuromodulation, and semi-autonomous ablation. Innovators will show what is ready now, what is approaching the clinic, and what could redefine the procedure. Click on the session title to learn more and see a full agenda for this Innovation Summit session.",
       "Authors": "Matthieu De Beule, Marco Götte, David N. Kenigsberg, Olurotimi Mesubi, Théophile Mohr Durdez, Jonathan Piccini, Vivek Y. Reddy, Ivo Roca-Luque, Kyungmoo Ryu, Devi G Nair, MD, FHRS, Prashanthan Sanders",
       "Affiliation": "FEops; University of Calgary | Stephenson Cardiac Imaging Centre, Libin Cardiovascular Institute; Florida Heart Rhythm Specialists and Fort Lauderdale Heart & Rhythm Surgical Center; Johns Hopkins University; Volta Medical; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; Mount Sinai Health System; Hospital Clínic de Barcelona; Abbott; St. Bernards Medical Center & Arrhythmia Research Group; University of Adelaide",
       "SpeakerTitles": "CEO & Co-Founder; Professor | Scientific Director; Clinical Cardiac Electrophysiologist & Founder; Assistant Professor of Medicine; CEO; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Director of Cardiac Arrhythmia Services; Cardiac Electrophysiologist | Head of the Arrhythmia Section; Senior Director, R&D; Director of the Cardiac Electrophysiology & Research; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 1,
-      "uid": "s_1",
-      "isMedtronic": false
+      "uid": "s_1"
     },
     {
       "day": "Friday 9/18",
@@ -21,12 +22,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Innovation Summit",
       "Title": "Innovation Summit Session II: Beyond Conventional EP – PFA, Devices, Access, and Stroke Prevention",
+      "Abstract": "The Innovation Summit continues across the expanding boundaries of EP: new PFA strategies, non-invasive mapping, ventricular ablation, LAA therapy, physiologic pacing, pericardial access, imaging, sleep-apnea workflows, and stroke prevention. Short, focused presentations will highlight technologies with credible paths to clinical impact. Click on the session title to learn more and see a full agenda for this Innovation Summit session.",
       "Authors": "Andre d’Avila, Tina Baykaner, MD, MPH, Michael Curley, Matthew Hakimi, Gordon Ho, James Ip, Rohit Mehta, Steven Mickelsen, Jonathan Piccini, Ishu Rao, MD, Vivek Y. Reddy, Nicholas Serafini, Wilber Su, Rob Taft, Usha Tedrow, J. Peter Weiss, Jeffrey Winterfield, Ian Woollett, Devi G Nair, MD, FHRS, Prashanthan Sanders",
       "Affiliation": "Beth Israel Deaconess Medical Center; Department of Internal Medicine | Division of Cardiovascular Medicine and Electrophysiology | Stanford University; Thermedical; Cedars Sinai Medical Center; UC San Diego; Weill Cornell Medicine; Sanger Heart and Vascular Institute; Field Medical | Atraverse Medical, Inc. | Scripps Health; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; Impulse Dynamics; Mount Sinai Health System; Advocate Aurora Health Lutheran General Hospital; Banner-University Medical Center | University of Arizona College of Medicine; Nidus Biomedical; Brigham and Women’s Hospital | Harvard Medical School; Banner University of Arizona Medical Center Phoenix (BUMCP); Medical University of South Carolina; Sentara Norfolk General Hospital; St. Bernards Medical Center & Arrhythmia Research Group; University of Adelaide",
       "SpeakerTitles": "Director of Cardiac Arrhythmia Service; Assistant Professor; President; Cardiac Electrophysiologist; Associate Clinical Professor, Staff Cardiac Electrophysiologist; Professor; Cardiac Electrophysiologist; CEO | Board Member | Cardiac Electrophysiologist; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Medical Director & Senior Vice President of Medical Affairs; Director of Cardiac Arrhythmia Services; Electrophysiologist | Director, Electrophysiology Laboratory; Director of Cardiac Electrophysiology | Professor of Medicine; Vice President, R&D; Director, Clinical Cardiac Electrophysiology Program | Associate Professor of Medicine; Cardiac Electrophysiologist; Hank and Laurel Greer Chair in Clinical Cardiac Electrophysiology | Professor of Medicine; Cardiac Electrophysiologist | Director of the Electrophysiology Laboratory; Director of the Cardiac Electrophysiology & Research; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 2,
-      "uid": "s_2",
-      "isMedtronic": false
+      "uid": "s_2"
     },
     {
       "day": "Friday 9/18",
@@ -35,12 +37,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "Opening Remarks",
+      "Abstract": "Kick off the First Day of HRX Live 2026 with Executive Producer Dr. Jonathan Piccini and Co-Producer Dr. Prashanthan Sanders. They’ll highlight emerging themes from across the meeting and share the conversations generating the most excitement. Get an insiders preview of the can’t-miss sessions still ahead as HRX Live continues to explore the future of cardiovascular care.",
       "Authors": "Jonathan Piccini, Prashanthan Sanders",
       "Affiliation": "Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; University of Adelaide",
       "SpeakerTitles": "Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 3,
-      "uid": "s_3",
-      "isMedtronic": false
+      "uid": "s_3"
     },
     {
       "day": "Friday 9/18",
@@ -49,12 +52,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Featured Keynote",
       "Title": "Computable Cardiology: How AI is Transforming the Future of Cardiovascular Medicine",
+      "Abstract": "Murali Aravamudan, Co-Founder and CEO of nference, joins Dr. Jonathan Piccini for a visionary Featured Keynote conversation exploring how artificial intelligence is redefining cardiovascular medicine. A serial entrepreneur and engineer with a track record of building transformative technology companies, Murali has turned his focus to life sciences through nference and its affiliated ventures, leveraging AI to make biomedical knowledge computable at unprecedented scale. Together, Murali and Dr. Piccini will examine how massive multimodal datasets—from electronic health records to imaging, genomics, and physiologic signals—are enabling a new era of predictive and precision cardiovascular care. The discussion will explore the intersection of AI, electrophysiology, and translational innovation, including how partnerships between technology companies, health systems, and clinicians can accelerate discovery and improve patient outcomes. Attendees will gain insight into the opportunities and challenges of implementing AI in real-world practice, the evolving role of data-driven medicine, and what the next decade of intelligent cardiovascular care may look like.",
       "Authors": "Murali Aravamudan, Jonathan Piccini",
       "Affiliation": "nference; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center",
       "SpeakerTitles": "Co-Founder & Chief Executive Officer; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section",
+      "isMedtronic": false,
       "session_id": 4,
-      "uid": "s_4",
-      "isMedtronic": false
+      "uid": "s_4"
     },
     {
       "day": "Friday 9/18",
@@ -63,12 +67,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Is AF Mapping Ready for Routine Clinical Procedure?",
+      "Abstract": "Electrophysiologists have been trying to map atrial fibrillation for many years, but almost all of these efforts have fallen short. This session will discuss how new innovations may allow more accurate and informative mapping of fibrillatory conduction and thereby enable innovations in ablative therapy as well.",
       "Authors": "Isabel Deisenhofer, MD, Vadim V. Fedorov, Prapa Kanagaratnam, Saar Moisa, Shlomo Shpun, Sanjiv Narayan",
       "Affiliation": "German Heart Center Munich Department of Electrophysiology; The Ohio State University Wexner Medical Center; Imperial College Healthcare, St Mary’s Hospital, Cardiology; Kardium; TechWald Holding S.p.A.; Stanford University",
       "SpeakerTitles": "Head, Department of Electrophysiology; Corrine Frick Research Chair in Heart Failure and Arrhythmia; Consultant Cardiologist; Senior Director of Product Management; Chief Scientific Office; Professor of Medicine | Director of the NIH T32 Computational Medicine Training Program (CHIP) | Co-Director of the Arrhythmia Center",
+      "isMedtronic": false,
       "session_id": 5,
-      "uid": "s_5",
-      "isMedtronic": false
+      "uid": "s_5"
     },
     {
       "day": "Friday 9/18",
@@ -77,12 +82,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Making AFib Care Pathways Work: From Evidence to Execution Across Real-World Settings – Powered by Johnson & Johnson MedTech",
+      "Abstract": "What does the future of AFib care actually look like? Strong evidence supports early rhythm control, but adoption remains inconsistent due to gaps in execution, coordination, and access. This roundtable will explore how to translate evidence into scalable, real-world care delivery.",
       "Authors": "T. Jared Bunch, Edward Gerstenfeld, Andrea Robinson, Emma Svennberg, MD, PhD, Daniel Valcicak, Jamie Treskot",
       "Affiliation": "Division of Cardiovascular Medicine at University of Utah Hospital; University of California, San Francisco; Riverside Methodist Hospital, OhioHealth; Karolinska University Hospital; VHC Health; Johnson & Johnson MedTech",
       "SpeakerTitles": "Associate Chief of Cardiology; Professor of Medicine; Nurse Practitioner; Assistant professor | Electrophysiologist; Cardiac Electrophysiology PA; Regional Therapy Advancement Manager",
+      "isMedtronic": false,
       "session_id": 6,
-      "uid": "s_6",
-      "isMedtronic": false
+      "uid": "s_6"
     },
     {
       "day": "Friday 9/18",
@@ -91,12 +97,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "AI in Arrhythmia Care: Opportunities, Pitfalls, and Practical Applications for Allied Professionals",
+      "Abstract": "Artificial intelligence is reshaping how we detect, diagnose, and manage arrhythmias—but what is the role of digital transformation in achieving sustainable healthcare delivery? This session unpacks the promise and the challenges of AI in heart rhythm care, from wearable devices that flag arrhythmias in real time to decision-support algorithms that guide risk assessment and personalized therapy. Participants will discuss common challenges (including bias, data privacy, and workflow integration) and explore practical ways to harness AI tools for patient care, device management, and interprofessional collaboration. This session is designed to appeal to all clinicians on the heart rhythm team.",
       "Authors": "Alicia C. Rodriguez, Sean Shoffstall, Yekaterina Spivak, Erica Zado, PAC, FHRS, Adrian Elliott",
       "Affiliation": "Bloomer Tech; PaceMate; Children’s Hospital of Philadelphia | Welcome Baby 247; Hospital of the University of Pennsylvania; Adelaide University, Royal Adelaide Hospital",
       "SpeakerTitles": "Founder & CEO; Chief Product Officer; Pediatric Electrophysiology Physician Assistant | IBCLC & Co-founder; Physician Assistant; Senior Research Fellow | Associate Professor",
+      "isMedtronic": false,
       "session_id": 7,
-      "uid": "s_7",
-      "isMedtronic": false
+      "uid": "s_7"
     },
     {
       "day": "Friday 9/18",
@@ -105,12 +112,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Consumer Design in Rhythm Monitoring: Unlocking Opportunities in Agentic AI, Treatment Optimization and Research – Powered by Wearlinq",
+      "Abstract": "Continuous rhythm monitoring paired with a patient-facing app turns a single diagnostic episode into an always-on platform. Imagine 24/7 access to quantified rhythm data, raw ECG, and patient-reported input — symptoms, wellbeing, adherence — in one stream. The question this roundtable puts to the room: with that foundation in place, what would you build?",
       "Authors": "Zachi Itzhak Attia, MSEE, PhD, Rex Gale, Suneet Mittal, Konrad Morzkowski, Jeanne Poole, Samuel F. Sears, Albert Rogers",
       "Affiliation": "Mayo Clinic; TEDxAjijic; Valley Health System; Wearlinq; University of Washington Medical Center and School of Medicine; East Carolina Heart Institute; Stanford University",
       "SpeakerTitles": "Director of AI; Founder | Patient Advocate; Chair, Cardiovascular Service Line; Co-Founder & CEO; Cardiac Electrophysiologist | Director | Professor of Cardiology and Medicine; Professor in the Departments of Psychology and Cardiovascular Sciences | Division Chief of Innovation and Research | Associate Director of the ECU Cardiology Fellowship; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 8,
-      "uid": "s_8",
-      "isMedtronic": false
+      "uid": "s_8"
     },
     {
       "day": "Friday 9/18",
@@ -119,12 +127,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Drowning in Alerts: How AI Is Redefining What Deserves Clinical Attention in Remote Monitoring – Powered by Implicity",
+      "Abstract": "Managing the influx of ILR transmissions requires a delicate balance between sensitivity and workflow efficiency. This roundtable will explore the frontline battle against data deluge, debating the efficacy of built-in manufacturer algorithms versus integrated third-party platforms. Panelists will share insights on how to streamline triage workflows and identify the most effective strategies for actionable cardiac monitoring.",
       "Authors": "Tina Baykaner, MD, MPH, David Duncker, MD, FHRS, Rakesh Gopinathannair, Joshua Lampert, Arnaud Rosier, Elaine Wan, Manish Wadhwa",
       "Affiliation": "Department of Internal Medicine | Division of Cardiovascular Medicine and Electrophysiology | Stanford University; Hannover Medical School; Kansas City Heart Rhythm Institute; Mount Sinai Heart in The Mount Sinai Hospital; Implicity; Columbia University Medical Center, College of Physicians and Surgeons | New York-Presbyterian Hospital; SummaCor | San Diego Arrhythmia Associates | Implicity",
       "SpeakerTitles": "Assistant Professor; Head of Hannover Heart Rhythm Center; Director of Cardiac Electrophysiology Laboratories; Cardiac Electrophysiologist & Medical Director of Machine Learning; Chief Executive Officer & Founder; Esther Aboodi Associate Professor of Medicine in Cardiology and Cardiac Electrophysiology | Attending Physician at New York-Presbyterian Hospital; Chief Executive Officer | Cardiac Electrophysiologist | Medical Advisor",
+      "isMedtronic": false,
       "session_id": 9,
-      "uid": "s_9",
-      "isMedtronic": false
+      "uid": "s_9"
     },
     {
       "day": "Friday 9/18",
@@ -133,12 +142,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Beyond Alerts: Building the Continuous Cardiovascular Care Platform – Powered by 91Life",
+      "Abstract": "Remote monitoring was originally designed to detect device problems. Today it has the potential to become the digital backbone for managing atrial fibrillation, heart failure, hypertension, obesity, sleep apnea, and post-procedure follow-up. This discussion explores how health systems can build integrated, longitudinal care pathways that combine remote monitoring, patient engagement, AI, and care navigation into a single operating model.",
       "Authors": "Kelly Arps, Bleron Baraliu, Thomas Deering, Gerhard Hindricks, MD, PhD, Jessica Mullenix, George Stuart Mendenhall",
       "Affiliation": "University of Michigan; 91Life; Piedmont Heart Institute; Charite University Hospital, Berlin; U.S. Department of Veterans Affairs Cardiology Office; Scripps Memorial Hospital | Everbeat",
       "SpeakerTitles": "Cardiac Electrophysiologist; CEO; Chief, Cardiovascular Centers of Excellence | Chief, Arrhythmia Center; Medical Director; Cardiac Electrophysiology Nurse Practitioner; Cardiac Electrophysiologist and Researcher | Chief Medical Officer",
+      "isMedtronic": false,
       "session_id": 10,
-      "uid": "s_10",
-      "isMedtronic": false
+      "uid": "s_10"
     },
     {
       "day": "Friday 9/18",
@@ -147,12 +157,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Why Startups Get Stuck Before First-in-Human and How to Fix It – Powered by 3PH Alliance/HRCRS",
+      "Abstract": "Most MedTech failures happen before first-in-human, not because of bad technology, but because of the wrong preclinical strategy. Startups often overspend on data that doesn’t reduce regulatory risk or move them closer to clinical use. In this session, you’ll learn how to align preclinical, simulation, and regulatory strategy to move faster with less waste.",
       "Authors": "Leanne Bakke, Srijoy Mahapatra, Jose Osorio, Christopher Porterfield, Luke Ralston, Jason Quill, J. Peter Weiss",
       "Affiliation": "BioSim Innovations; Abbott; HCA Florida Miami | 3PH Alliance | Heart Rhythm Clinical Research Solutions; Aurora Denver Cardiology Associates; US Food & Drug Administration; Structural Heart Venture; Banner University of Arizona Medical Center Phoenix (BUMCP)",
       "SpeakerTitles": "Co-Founder & CEO; World Wide General Manager, Left Atrial Appendage Management; Medical Director of Electrophysiology – HCA Florida Miami |  Founder and CMO | Founder and President; Cardiac Electrophysiologist; Biomedical Engineer; Founder; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 11,
-      "uid": "s_11",
-      "isMedtronic": false
+      "uid": "s_11"
     },
     {
       "day": "Friday 9/18",
@@ -161,12 +172,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Pitch Competition",
       "Title": "Pitch Competition I",
+      "Abstract": "The HRX 2026 Pitch Competition provides cardiovascular startups with a platform to present their innovative products, services, and solutions to a distinguished panel of judges and potential investors and win cash prices. The top five teams selected will compete on the HRX Main Stage. Each team will have ~5-10 minutes to creatively pitch their innovative idea, followed by five minutes to field questions from judges and attendees.",
       "Authors": "Sajol Ghoshal, Anna Li, Tony Ma, Sean McCormick, Naoki Tomii",
       "Affiliation": "Advanced TeleSensors Inc.; Korion Health; Benten Technologies, Inc.; Atrility Medical; The University of Tokyo",
       "SpeakerTitles": "Chief Executive Officer; CEO; CEO | Co-founder; CEO; Associate Professor",
+      "isMedtronic": false,
       "session_id": 12,
-      "uid": "s_12",
-      "isMedtronic": false
+      "uid": "s_12"
     },
     {
       "day": "Friday 9/18",
@@ -174,13 +186,14 @@ const REAL_DATA = {
       "room": "HRStv Studio",
       "type": "session",
       "Track": "General",
-      "Title": "One Patient, Two Timelines: Rethinking Long-Term Continuous Cardiac Monitoring – Live from HRStv",
+      "Title": "One Patient, Two Timelines: Rethinking Long-Term Continuous Cardiac Monitoring",
+      "Abstract": "The discussion explores the seam between diagnostic ambulatory monitoring and chronic device-based monitoring — where the divide still serves patients, where it’s legacy workflow, and whether “long-term monitoring” needs a sharper definition as durations on both ends keep expanding. We think your perspective on the subject would be central to that conversation.",
       "Authors": "Chris Irving, Mintu Turakhia, Nino Isakadze",
       "Affiliation": "Murj Inc.; iRhythm Technologies, Inc. | Stanford University; Johns Hopkins Hospital",
       "SpeakerTitles": "Co-Founder, Chief Experience Officer & Head of Design; Chief Medical and Scientific Officer + EVP, Product Management and Innovation | Professor of Medicine and Cardiac Electrophysiologist; Assistant Professor of Medicine | Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 13,
-      "uid": "s_13",
-      "isMedtronic": false
+      "uid": "s_13"
     },
     {
       "day": "Friday 9/18",
@@ -189,12 +202,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "ASCs Will Improve EP Care Delivery and Access",
+      "Abstract": "Ambulatory surgical centers have changed the fields of gastroenterology and orthopedics. How will they impact the practice of EP? Will they improve access and quality of care or not? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Dhanunjaya R. Lakkireddy, Usman Siddiqui, Rohit Mehta",
       "Affiliation": "HCA Midwest in Overland Park, Kansas; Advent Health Celebration; Sanger Heart and Vascular Institute",
       "SpeakerTitles": "Executive Medical Director of the Kansas City Heart Rhythm Institute; Electrophysiologist; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 14,
-      "uid": "s_14",
-      "isMedtronic": false
+      "uid": "s_14"
     },
     {
       "day": "Friday 9/18",
@@ -203,12 +217,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Innovating How We Do Research: The HRS Research Network",
+      "Abstract": "What happens when electrophysiologists, engineers, and entrepreneurs co-design the future of arrhythmia care? This session will highlight how the HRS Research Network is enabling large-scale collaborative studies, advancing AI and digital twin models, and leveraging data infrastructure—from clinical trials like CABANA-HF to real-world ECG, EHR, and registry-based analytics—to accelerate discovery and innovation. Join us to explore how to engage with this ecosystem and translate cutting-edge technologies into impactful clinical research and practice.",
       "Authors": "Patrick Boyle, Thomas Deneke, Luigi Di Biase, MD, PhD, FHRS, Larry Jackson, II, Valentina Kutyifa, Douglas Packer, Pugazhendhi Vijayaraman, Kenneth Bilchick",
       "Affiliation": "University of Washington; Clinic for Arrhythmology, University Heart Center Nuremberg, Paracelsus Medical University; Albert Einstein College of Medicine at Montefiore Health System; Duke University Medical Center; University of Rochester Medical Center; Intermountain Medical Center; Geisinger Heart & Vascular Institute; University of Virginia",
       "SpeakerTitles": "Associate Professor of Bioengineering; Cardiac Electrophysiologist; Clinical Cardiac Electrophysiology; Associate Professor of Medicine; Professor of Medicine; Professor of Medicine; Director, CCEP Fellowship; Associate Professor of Medicine | Clinical Cardiologist & Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 15,
-      "uid": "s_15",
-      "isMedtronic": false
+      "uid": "s_15"
     },
     {
       "day": "Friday 9/18",
@@ -217,12 +232,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Drug Development for Arrhythmias: From Symptom Relief to Digital-Era Outcomes – Powered by Milestone Pharmaceuticals",
+      "Abstract": "As the management of supraventricular tachycardia (SVT) evolves, advances in drug development, digital health technologies, and patient-centered care are reshaping the acute treatment pathway. This interactive roundtable will explore how emerging therapies, innovative outpatient management strategies, and integration with wearable technologies may improve patient outcomes, optimize healthcare utilization, and redefine the transition from symptom relief to definitive arrhythmia care.",
       "Authors": "Brynn Dechert-Crooks, James Ip, Oliver Monfredi, Andrea Russo, MD, Kamala Tamirisa, Gregory Marcus",
       "Affiliation": "University of Michigan Congenital Heart Center; Weill Cornell Medicine; University of Virginia; Cooper University Hospital; UT Southwestern Medical Center; Univ of California, San Francisco | JAMA",
       "SpeakerTitles": "Pediatric Electrophysiology Nurse Practitioner; Professor; Associate Professor of Medicine, Medical Director of the Complex Lead Management and Extraction Center of Excellence; Academic Chief, Division of Cardiology | Director, Cardiac Electrophysiology and Arrhythmia Services | Director, CCEP Fellowship; Clinical Cardiac Electrophysiologist | Associate Professor of Internal Medicine in the Division of Cardiology | Director of Electrophysiology Research; Cardiac Electrophysiologist & Professor of Medicine | Associate Chief of Cardiology for Research",
+      "isMedtronic": false,
       "session_id": 16,
-      "uid": "s_16",
-      "isMedtronic": false
+      "uid": "s_16"
     },
     {
       "day": "Friday 9/18",
@@ -231,12 +247,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "The 12-lead ECG Has Been Around For a While, Can’t We Find Something Better?",
+      "Abstract": "The 12-lead electrocardiogram has been the ultimate innovation in the field of electrophysiology. Yet, it has remained essentially unchanged for over 75 years. Will something better replace it – potentially in our lifetime? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Zak Loring, Gaurav Upadhyay, Mehak Dhande",
       "Affiliation": "Duke University Medical Center; The University of Chicago Medicine; Stanford University, Stanford Healthcare",
       "SpeakerTitles": "Cardiac Electrophysiologist; Professor of Medicine; Interventional Cardiac Electrophysiologist | Physician Scientist",
+      "isMedtronic": false,
       "session_id": 17,
-      "uid": "s_17",
-      "isMedtronic": false
+      "uid": "s_17"
     },
     {
       "day": "Friday 9/18",
@@ -245,12 +262,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "New Autonomic Approaches to Complement Arrhythmia Care – Powered by SymKardia",
+      "Abstract": "The session will explore the evolving role of autonomic neuromodulation as a complementary strategy to traditional ablation and pharmacologic therapies for complex, recurrent arrhythmias. Panelists will discuss emerging approaches, with particular focus on the potential for beneficial effects of sympathetic pathway attenuation at the level of ansa subclavia, a nerve bundle in the paravertebral sympathetic chain, highlighting its promise for reducing arrhythmia recurrence and addressing current limitations of existing therapies.",
       "Authors": "Kelly Arps, Malcolm Finlay, Marat Fudim, Jonathan Piccini, Vivek Y. Reddy, Kalyanam Shivkumar, Prashanthan Sanders",
       "Affiliation": "University of Michigan; Barts Heart Centre | Echopoint Medical Ltd | Rhythm AI Ltd; Duke University Medical Center; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; Mount Sinai Health System; UCLA Health System, UCLA Cardiac Arrhythmia Center & EP Programs; University of Adelaide",
       "SpeakerTitles": "Cardiac Electrophysiologist; Consultant Cardiologist | Chief Medical Officer | Founder; Associate Professor & Heart Failure Cardiologist; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Director of Cardiac Arrhythmia Services; Professor & Director, Center for Interventional Programs; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 18,
-      "uid": "s_18",
-      "isMedtronic": false
+      "uid": "s_18"
     },
     {
       "day": "Friday 9/18",
@@ -259,12 +277,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "The Next Generation of Ambulatory ECG Monitoring and Virtual Arrhythmia Detection – Powered by HelpWear",
-      "Authors": "Ilyas Colombowala, Derek Exner, Martha G. Ferrara, Rod Passman, Hee Tae Yu,AMbarish Pandey",
+      "Abstract": "This session will examine the next wave of ambulatory ECG monitoring technologies designed to address the diagnostic, workflow, and patient-experience gaps that persist despite the maturation of patch-based and implantable solutions. Faculty will discuss where current options fall short for key patient populations (e.g. cryptogenic stroke, recurrent unexplained syncope, low-yield palpitation workups) and what device, signal-quality, and integration requirements must be met before a new option can earn a place in the standard EP toolkit.",
+      "Authors": "Ilyas Colombowala, Derek Exner, Martha G. Ferrara, Rod Passman, Hee Tae Yu, Ambarish Pandey",
       "Affiliation": "Octagos; HelpWear Inc. | Cumming School of Medicine at University of Calgary; White Plains Hospital-Montefiore Health Systems; Northwestern University Feinberg School of Medicine; Yonsei University College of Medicine; University of Texas Southwestern Medical Center",
       "SpeakerTitles": "Chief Medical and Compliance Officer; Chief Medical Officer | Professor; Family Nurse Practitioner | Assistant Director EP Services; Jules Reingold Professor of Electrophysiology & Cardiac Electrophysiologist; Cardiac Electrophysiologist, Associate Professor of Medicine; Associate Professor of Cardiology in Internal Medicine",
+      "isMedtronic": false,
       "session_id": 19,
-      "uid": "s_19",
-      "isMedtronic": false
+      "uid": "s_19"
     },
     {
       "day": "Friday 9/18",
@@ -273,12 +292,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "From Hype to Impact: How AI Can Standardize EP Workflows—and Help Treat the Complex AF Patient – Powered by Volta Medical",
+      "Abstract": "AI is rapidly entering EP labs but its real test is whether it can standardize complex workflows and expand access to care. This roundtable separates hype from impact and explores how AI-enabled pathways can help find, refer, and treat the complex AF patients who make up the “untreated majority.” The discussion will also examine how reimbursement and coverage considerations influence the adoption, scalability, and patient access of these emerging technologies.",
       "Authors": "Tina Baykaner, MD, MPH, Kristie Coleman, Isabel Deisenhofer, MD, Christopher Liu, Théophile Mohr Durdez, Paul Zei",
       "Affiliation": "Department of Internal Medicine | Division of Cardiovascular Medicine and Electrophysiology | Stanford University; Lenox Hill Hospital; German Heart Center Munich Department of Electrophysiology; Weill Cornell Medicine System | New York-Presbyterian Hospital; Volta Medical; Brigham and Women’s Hospital",
       "SpeakerTitles": "Assistant Professor; Director, Cardiac Electrophysiology Research; Head, Department of Electrophysiology; Director of EP Services; CEO; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 20,
-      "uid": "s_20",
-      "isMedtronic": false
+      "uid": "s_20"
     },
     {
       "day": "Friday 9/18",
@@ -287,12 +307,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Can Gene Therapy Deliver the Promise of Personalized EP Therapy?",
+      "Abstract": "Cardiac genetics offers a compelling test case for digitally enabled precision medicine—where the convergence of genomics and continuous data has the potential to fundamentally reshape how risk is understood, monitored, and managed. This session will explore these themes as well as the potential for interventional therapies that can fundamentally change outcomes.",
       "Authors": "Vassilios Bezzerides, Brynn Dechert-Crooks, Nathan Miller, Jason Roberts, Jonathan Schwartz, Robert Whitehill, Dominic Abrams",
       "Affiliation": "Boston Children’s Hospital; University of Michigan Congenital Heart Center; St. Louis Children’s Hospital; McMaster University; Rocket Pharmaceuticals; Childrens Healthcare of Atlanta Cardiology",
       "SpeakerTitles": "Assistant Professor of Pediatrics; Pediatric Electrophysiology Nurse Practitioner; Electrophysiology Nurse; Cardiac Electrophysiologist; Chief Scientific and Gene Therapy Officer; Pediatric Cardiac Electrophysiologist; Co-Director of the Center for Cardiovascular Genetics",
+      "isMedtronic": false,
       "session_id": 21,
-      "uid": "s_21",
-      "isMedtronic": false
+      "uid": "s_21"
     },
     {
       "day": "Friday 9/18",
@@ -301,12 +322,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Permanent Pacing but not for Bradycardia",
+      "Abstract": "For decades pacing has been used primarily to treat disorders of impulse formation and conduction. In the future, that will change as permanent pacing enters a new area where we try and modify and improve circulatory function by modulating more than conduction alone. This session will examine some of the most innovating and paradigm- changing concepts in pacing.",
       "Authors": "Daniel J. Friedman, Karl-Heinz Kuck, Margaret Infeld, Daniel L. Lustgarten, Andrea Russo, MD, Robert Kowal",
       "Affiliation": "Duke University School of Medicine; University Hospital Luebeck; Tufts Medical Center; The University of Vermont College of Medicine; Cooper University Hospital; Medtronic",
       "SpeakerTitles": "Cardiac Electrophysiologist | Associate Professor; Consultant Cardiologist; Cardiac Electrophysiologist | Assistant Professor; Professor of Medicine; Academic Chief, Division of Cardiology | Director, Cardiac Electrophysiology and Arrhythmia Services | Director, CCEP Fellowship; Vice President and General Manager, Cardiac Pacing Therapies | Cardiac Electrophysiologist",
+      "isMedtronic": true,
       "session_id": 22,
-      "uid": "s_22",
-      "isMedtronic": true
+      "uid": "s_22"
     },
     {
       "day": "Friday 9/18",
@@ -315,12 +337,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Abstract Happy Hour",
       "Title": "HRX Abstract Happy Hour I – Powered by 91Life",
-      "Authors": "Michel Abou Khalil, Moez Alnazeer, Simrat Arora, Ulrika Birgersdotter-Green, Jian Cao, Brandon Doty, Alex El Darzi, Carlo El Khoury, Hassan Elshirbiny, Muhammad Fazal, Masato Hachisuka, Sylvia Hanna, Gene Hu, Sei Iwai,AMy Kleinhans, Yingshuo Liu, Abhishek Maan, Andrew Nguyen, Jonathan Piccini, Cara Schaaf,AMber Seiler, Hiroshi Seno, Nicholas Sommers, Ana Sopa, Anand Thiyagarajah, Venkatakrishna Tholakanahalli, Nestor Vasquez, Jeffrey Winterfield, Neal Bhatia, Yaariv Khaykin, Bradley Knight, Anne Kroman, Nishaki Mehta, Kamala Tamirisa",
+      "Abstract": "The HRX Abstract Happy Hour session, powered by 91Life, kicks off with opening remarks from 91Life. Following the introduction, abstract presenters will present their work in an informal, lively, and engaging setting designed to foster connection and conversation. Click on the session to see the full presentation information and timing.",
+      "Authors": "Michel Abou Khalil, Moez Alnazeer, Simrat Arora, Ulrika Birgersdotter-Green, Jian Cao, Brandon Doty, Alex El Darzi, Carlo El Khoury, Hassan Elshirbiny, Muhammad Fazal, Masato Hachisuka, Sylvia Hanna, Gene Hu, Sei Iwai, Amy Kleinhans, Yingshuo Liu, Abhishek Maan, Andrew Nguyen, Jonathan Piccini, Cara Schaaf, Amber Seiler, Hiroshi Seno, Nicholas Sommers, Ana Sopa, Anand Thiyagarajah, Venkatakrishna Tholakanahalli, Nestor Vasquez, Jeffrey Winterfield, Neal Bhatia, Yaariv Khaykin, Bradley Knight, Anne Kroman, Nishaki Mehta, Kamala Tamirisa",
       "Affiliation": "Tulane Research Innovation for Arrhythmia Discovery (TRIAD); Baylor College of Medicine; University of Colorado; UC San Diego Health System; Medtronic Inc.; University of Nebraska Medical Center; TRIAD-Tulane University; Tulane University – TRIAD; HDZ-NRW Bad Oeynhausen, Germany; Stanford University; Nippon Medical School; Vector Remote Care; UTSW; WMC Health Network; HonorHealth; Tulane University School of Medicine; The University of Toledo; Keck Medicine of USC; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; Upstate Cardiology; CV Remote Solutions | LeBauer Cardiology; Institute of Science Tokyo; Medical College of Wisconsin; 91Life; University of Adelaide; University of Minnesota | Minneapolis VA Health Care System; Johns Hopkins Hospital; Medical University of South Carolina; Emory University Hospital System; Myant Health; Northwestern Medicine | Bluhm Cardiovascular Institute (BCVI); William Beaumont Oakland University School of Medicine; UT Southwestern Medical Center",
       "SpeakerTitles": "Medical Intern & Research Fellow; Cardiology Fellow; Internal Medicine Resident; Cardiac Electrophysiologist | Professor of Medicine; Research Program Director and Technical Fellow; Internal Medicine Resident; Cardiology Post-Doc; Research Scientist; Electrophysiology & Rhythmology fellow; Cardiology Fellow; Assistant Professor; Lead Solutions Engineer; Section Chief, Cardiac Electrophysiology; Electrophysiology Nurse Practitioner; Biostatistician; Cardiac Electrophysiologist; Medical Student; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; RN; Chief Operating Officer | EP Nurse Practitioner & Arrhythmia Program Services Coordinator; Assistant Professor; Cardiology Fellow; Machine Learning Engineer; Electrophysiology Fellow; Professor of Medicine | Chief-Cardiac Electrophysiology; Cardiac Electrophysiologist; Hank and Laurel Greer Chair in Clinical Cardiac Electrophysiology | Professor of Medicine; Cardiac Electrophysiologist | Co-Director of the Complex Ventricular Tachycardia Ablation Program; Chief Medical Information Officer; Director of Cardiac Electrophysiology | Director of the Heart Rhythm Center; Associate Professor of Cardiac Electrophysiology | Director of the Lead Management Program, the Cardiac Device Clinic, and MUSC Heart Station; Associate Professor of Medicine; Clinical Cardiac Electrophysiologist | Associate Professor of Internal Medicine in the Division of Cardiology | Director of Electrophysiology Research",
+      "isMedtronic": true,
       "session_id": 23,
-      "uid": "s_23",
-      "isMedtronic": true
+      "uid": "s_23"
     }
   ],
   "Saturday 9/19": [
@@ -331,12 +354,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "Saturday Opening Remarks",
+      "Abstract": "Kick off Day 2 of HRX Live 2026 with Executive Producer Dr. Jonathan Piccini and Co-Producer Dr. Prashanthan Sanders as they reflect on some of the memorable moments, bold ideas, and key takeaways from Friday’s sessions. They’ll highlight emerging themes from across the meeting and share the conversations generating the most excitement. Get an insiders preview of the can’t-miss sessions still ahead as HRX Live continues to explore the future of cardiovascular care.",
       "Authors": "Jonathan Piccini, Prashanthan Sanders",
       "Affiliation": "Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; University of Adelaide",
       "SpeakerTitles": "Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 24,
-      "uid": "s_24",
-      "isMedtronic": false
+      "uid": "s_24"
     },
     {
       "day": "Saturday 9/19",
@@ -345,12 +369,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Featured Keynote",
       "Title": "Scaling Innovation: Leadership, Strategy, and the Future of Cardiac Arrhythmia Care",
+      "Abstract": "Rebecca Seidel, Senior Vice President and President of Cardiac Ablation Solutions at Medtronic, joins Dr. Suneet Mittal for a dynamic Featured Keynote conversation focused on what it takes to scale innovation in one of the fastest-growing sectors in MedTech. With more than two decades of leadership experience and oversight of a billion-dollar global business, Rebecca has led major acquisitions, accelerated innovation pipelines, and driven the commercialization of transformative cardiac technologies. Together, Rebecca and Dr. Mittal will explore how organizations can successfully bridge the gap between breakthrough concepts and real-world clinical impact. The discussion will examine the strategic decisions behind building and integrating innovation, navigating market disruption, fostering high-performing teams, and shaping the future of cardiac ablation technologies. Attendees will gain insight into leadership at scale, the evolving competitive landscape in electrophysiology, and how industry leaders are positioning the next generation of therapies to improve outcomes for patients worldwide.",
       "Authors": "Rebecca Seidel, Suneet Mittal",
       "Affiliation": "Medtronic; Valley Health System",
       "SpeakerTitles": "SVP and President, Electrophysiology Therapies; Chair, Cardiovascular Service Line",
+      "isMedtronic": true,
       "session_id": 25,
-      "uid": "s_25",
-      "isMedtronic": true
+      "uid": "s_25"
     },
     {
       "day": "Saturday 9/19",
@@ -359,12 +384,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Social Robotica and Future of Patient Education as Part of Innovative Care Models",
+      "Abstract": "This discussion explores how socially assistive robotics (“social robotica”) can enhance patient education by delivering consistent, personalized, and engaging coaching at the bedside, in clinics, and at home. We’ll review current use cases (e.g., medication adherence, rehab support, patient information, risk factor and lifestyle modification, chronic disease self-management), what the evidence says about patient outcomes and equity, and how robots can integrate with care teams and digital health tools. Participants will discuss practical design and implementation considerations—workflow fit, accessibility, privacy, trust, and safety—and leave with a framework for evaluating where social robots add real value in integrated care.",
       "Authors": "Sirena Bridges, Trudie Lobban, Emma Svennberg, MD, PhD, Ajay Tripuraneni, Mellanie True Hills, Kathryn Wood, Alessandra Pina",
-      "Affiliation": "VA Tennessee Valley HealthCare System; Arrhythmia Alliance | AF Association | STARS; Karolinska University Hospital; Baylor Scott & White Health;AMerican Foundation for Women’s Health & StopAfib.org; Emory University School of Nursing; Adelaide University and Royal Adelaide Hospital",
+      "Affiliation": "VA Tennessee Valley HealthCare System; Arrhythmia Alliance | AF Association | STARS; Karolinska University Hospital; Baylor Scott & White Health; American Foundation for Women’s Health & StopAfib.org; Emory University School of Nursing; Adelaide University and Royal Adelaide Hospital",
       "SpeakerTitles": "Cardiac Device Nurse Practitioner; Founder & CEO; Assistant professor | Electrophysiologist; Cardiac Electrophysiologist; Founder & CEO; Associate Professor; Electrophysiology Fellow and PhD Student",
+      "isMedtronic": false,
       "session_id": 26,
-      "uid": "s_26",
-      "isMedtronic": false
+      "uid": "s_26"
     },
     {
       "day": "Saturday 9/19",
@@ -373,12 +399,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "From First-in-Human to Real Use: Why MedTech Innovations Stall – Powered by 3PH Alliance/HRCRS",
+      "Abstract": "Many MedTech companies generate clinical data and still fail to gain traction because their evidence does not align with how care is actually delivered, evaluated, and paid for. Health systems, physicians, and administrators are not asking for more data, they are asking for clarity on outcomes, workflow impact, and economic value. This roundtable brings together provider, regulatory, and clinical strategy perspectives to unpack why evidence fails to influence real decisions and what it takes to build a case that drives use in practice.",
       "Authors": "Jackson Hair, David Krummen, Michael Lesh, Jason Moore, Joe Sasson, Rebecca Seidel, Paul Wang, Babak Nazer",
       "Affiliation": "U.S. Food and Drug Administration; University of California San Diego; UCSF | Quench, Inc.; 3PH Alliance/HRCRS; MedAxiom – An ACC Company; Medtronic; Stanford Medicine; University of Washington",
       "SpeakerTitles": "Biomedical Engineer; Professor of Clinical Medicine; Adjunct Professor of Medicine | Founder & CEO; Chief Commercial Officer; Chief Commercial Officer and EVP, MedAxiom Venture; SVP and President, Electrophysiology Therapies; Director of the Stanford Cardiac Arrhythmia Service & Professor of Medicine and of Bioengineering; Professor of Medicine and Bioengineering | Cardiac Electrophysiologist",
+      "isMedtronic": true,
       "session_id": 27,
-      "uid": "s_27",
-      "isMedtronic": true
+      "uid": "s_27"
     },
     {
       "day": "Saturday 9/19",
@@ -387,12 +414,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "AI Is Ready. Are We? Rethinking Cardiac Monitoring, Automation, and Research in the Intelligence Era – Powered by PaceMate",
+      "Abstract": "Cardiac electrophysiology is sitting on an unprecedented volume of data from CIEDs, remote monitoring platforms, EHRs, and registries, and AI promises to transform how we make sense of it. Yet the gap between algorithmic capability and real-world clinical adoption remains stubbornly wide, and closing it demands honest conversation about data quality, equity, and operational readiness. This roundtable brings together clinicians, researchers, and industry innovators to challenge assumptions, surface blind spots, and define what it will actually take to move AI from promising to practice.",
       "Authors": "Eugene Fu, Anne Kroman, Gregory Marcus, Lisa Roelle, Sean Shoffstall, Benjamin Steinberg, Camille Frazier-Mills",
       "Affiliation": "OhioHealth Heart & Vascular Physicians; Medical University of South Carolina; Univ of California, San Francisco | JAMA; Washington University in St. Louis & St. Louis Children’s Hospital; PaceMate; Denver Health Medical Center; Duke University Health System",
       "SpeakerTitles": "Clinical Cardiac Electrophysiologist; Associate Professor of Cardiac Electrophysiology | Director of the Lead Management Program, the Cardiac Device Clinic, and MUSC Heart Station; Cardiac Electrophysiologist & Professor of Medicine | Associate Chief of Cardiology for Research; Pediatric Electrophysiology Physician Assistant; Chief Product Officer; Director of Cardiac Electrophysiology; Cardiac Electrophysiologist | Professor of Medicine",
+      "isMedtronic": false,
       "session_id": 28,
-      "uid": "s_28",
-      "isMedtronic": false
+      "uid": "s_28"
     },
     {
       "day": "Saturday 9/19",
@@ -401,12 +429,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Advances in Optimizing Conduction System Pacing – Powered by AliveCor",
+      "Abstract": "Conduction system pacing promises more physiologic activation—but reliable implantation is only part of the challenge. This roundtable will examine the tools, signals, and strategies needed to target the conduction system, confirm true capture, optimize programming, and avoid ineffective or misleading results. Experts will debate what constitutes procedural success and how better implantation and verification can translate into durable clinical benefit.",
       "Authors": "Neal Bhatia, Mikhael El-Chami, Daniel Frisch, Nino Isakadze, Ajay Pillai, Alan Sugrue, Pugazhendhi Vijayaraman, Eugene Chung",
       "Affiliation": "Emory University Hospital System; Emory University; Thomas Jefferson University Hospital; Johns Hopkins Hospital; VCU Health; Mayo Clinic Rochester; Geisinger Heart & Vascular Institute; Massachusetts General Hospital/Harvard Medical School",
       "SpeakerTitles": "Cardiac Electrophysiologist | Co-Director of the Complex Ventricular Tachycardia Ablation Program; Electrophysiologist | Professor of Medicine; Section Chief of Electrophysiology | Professor; Assistant Professor of Medicine | Cardiac Electrophysiologist; Assistant Professor of Medicine; Cardiac Electrophysiologist; Director, CCEP Fellowship; Director, Sports Electrophysiology Clinic",
+      "isMedtronic": false,
       "session_id": 29,
-      "uid": "s_29",
-      "isMedtronic": false
+      "uid": "s_29"
     },
     {
       "day": "Saturday 9/19",
@@ -415,12 +444,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Seeing the Future with ICE",
+      "Abstract": "Catheter-based treatment of cardiac arrhythmias and Left Atrial Appendage Occlusion has seen tremendous advances in the past decade, lastly with a stronger trend toward integrated concomitant procedures. This session will review where today’s workflows are challenged using different guidance solutions as well as the trend toward more integrated and combined procedures, and the need for reliable, intuitive, and precise navigation as a key requirement for optimal treatment.",
       "Authors": "Christoph Hennersperger, Josef Kautzner, Bradley Knight, Dhanunjaya R. Lakkireddy, Paul Zei, Tina Baykaner, MD, MPH",
       "Affiliation": "LUMA Vision; IKEM Prague; Northwestern Medicine | Bluhm Cardiovascular Institute (BCVI); HCA Midwest in Overland Park, Kansas; Brigham and Women’s Hospital; Department of Internal Medicine | Division of Cardiovascular Medicine and Electrophysiology | Stanford University",
       "SpeakerTitles": "Co-Founder & Chief Technology Officer; Cardiac Electrophysiologist | Director of the Heart Centre and Head of Department of Cardiology; Director of Cardiac Electrophysiology | Director of the Heart Rhythm Center; Executive Medical Director of the Kansas City Heart Rhythm Institute; Cardiac Electrophysiologist; Assistant Professor",
+      "isMedtronic": false,
       "session_id": 30,
-      "uid": "s_30",
-      "isMedtronic": false
+      "uid": "s_30"
     },
     {
       "day": "Saturday 9/19",
@@ -429,12 +459,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Accelerating AVIM Therapy for Hypertensive Heart Disease: The Medtronic / Orchestra BioMed Innovation Partnership – Powered by Orchestra Biomed",
+      "Abstract": "In the medical device space, risk-reward sharing partnerships are uncommon for technology and clinical evidence development. AVIM therapy provides a unique case study on the benefits of such collaboration in bringing new innovations to market.",
       "Authors": "David Hochman, Robert Kowal, Charles Love, Andrea Russo, MD, Vivek Y. Reddy",
       "Affiliation": "Orchestra BioMed; Medtronic; Johns Hopkins Hospital; Cooper University Hospital; Mount Sinai Health System",
       "SpeakerTitles": "Chairman & CEO; Vice President and General Manager, Cardiac Pacing Therapies | Cardiac Electrophysiologist; Professor of Medicine; Academic Chief, Division of Cardiology | Director, Cardiac Electrophysiology and Arrhythmia Services | Director, CCEP Fellowship; Director of Cardiac Arrhythmia Services",
+      "isMedtronic": true,
       "session_id": 31,
-      "uid": "s_31",
-      "isMedtronic": true
+      "uid": "s_31"
     },
     {
       "day": "Saturday 9/19",
@@ -443,12 +474,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "From Promise to Practice: Implementing the Power of ECG-AI in Everyday Care – Powered by Anumana",
-      "Authors": "Samir Awasthi, Chad Bonhomme, Camille Frazier-Mills, Eleanor Huff,AMbarish Pandey, Rahul Doshi",
+      "Abstract": "The methods for AI-interpretation of electrocardiograms and other biosignatures are now well-established. However, implementing them in clinical practice is often an uphill battle. Cutting edge AI technologies that can predict incident atrial fibrillation or the onset of cardiomyopathy have tremendous value . . . but only if they are implemented and impact the patients they have been designed to help. This session moves beyond the individual AI-ECG tools and technologies themselves and focuses on how we can innovate care by putting these tools into everyday clinical practice. The session will foster a vibrant discussion of the challenges, opportunities, and best practices for bringing the power of AI-ECG technologies to all patients.",
+      "Authors": "Samir Awasthi, Chad Bonhomme, Camille Frazier-Mills, Eleanor Huff, Ambarish Pandey, Rahul Doshi",
       "Affiliation": "Anumana, Inc.; Westfield Physician Holdings, LLC; Duke University Health System; Baylor Scott & White The Heart Hospital; University of Texas Southwestern Medical Center; ASU School of Medicine and Medical Engineering",
       "SpeakerTitles": "Vice President, Clinical Research; President & Electrophysiologist; Cardiac Electrophysiologist | Professor of Medicine; Vice President, CV Service Line Operations; Associate Professor of Cardiology in Internal Medicine; Chief Cardiovascular Medicine",
+      "isMedtronic": false,
       "session_id": 32,
-      "uid": "s_32",
-      "isMedtronic": false
+      "uid": "s_32"
     },
     {
       "day": "Saturday 9/19",
@@ -457,12 +489,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Reimbursement for AI Tools in Arrhythmia Care",
+      "Abstract": "Artificial intelligence tools have proliferated in the literature and are beginning to emerge in the clinic and EP lab. They bring value, but how do we pay for them? This session will explore how reimbursement paradigms may need to evolve and innovate as well.",
       "Authors": "Zachi Itzhak Attia, MSEE, PhD, Matthew Kalscheur, Suraya Hani Kamsani, Kalyanam Shivkumar, Ajay Tripuraneni, Christopher Liu",
       "Affiliation": "Mayo Clinic; University of Wisconsin School of Medicine and Public Health; National Heart Institute, Malaysia; UCLA Health System, UCLA Cardiac Arrhythmia Center & EP Programs; Baylor Scott & White Health; Weill Cornell Medicine System | New York-Presbyterian Hospital",
       "SpeakerTitles": "Director of AI; Cardiac Electrophysiologist & Clinical Informaticist; Consultant Cardiologist and Electrophysiologist; Professor & Director, Center for Interventional Programs; Cardiac Electrophysiologist; Director of EP Services",
+      "isMedtronic": false,
       "session_id": 33,
-      "uid": "s_33",
-      "isMedtronic": false
+      "uid": "s_33"
     },
     {
       "day": "Saturday 9/19",
@@ -471,12 +504,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "LAA Occlusion Devices: Iterating, Innovating, and Improving",
+      "Abstract": "The first transvenous left atrial appendage occlusion device was approved by the FDA in 2015. There has been a lot of progress and change in the field in the subsequent decade. This session will chronicle the evolution of LAAO devices and the key opportunities for improvement and innovation moving forward.",
       "Authors": "Christopher Ellis, James Freeman, Bradley Knight, Venkatakrishna Tholakanahalli, Michael Lesh",
       "Affiliation": "Vanderbilt University Medical Center; Yale University School of Medicine; Northwestern Medicine | Bluhm Cardiovascular Institute (BCVI); University of Minnesota | Minneapolis VA Health Care System; UCSF | Quench, Inc.",
       "SpeakerTitles": "Director LAA (Left Atrial Appendage) Program | Director AF Center; Professor of Medicine; Director of Cardiac Electrophysiology | Director of the Heart Rhythm Center; Professor of Medicine | Chief-Cardiac Electrophysiology; Adjunct Professor of Medicine | Founder & CEO",
+      "isMedtronic": false,
       "session_id": 34,
-      "uid": "s_34",
-      "isMedtronic": false
+      "uid": "s_34"
     },
     {
       "day": "Saturday 9/19",
@@ -485,12 +519,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "The Time Behind the Tasks: APPs and the 32 Steps of Remote Monitoring – Powered by Vector Remote",
-      "Authors": "Aileen Ferrick, Kevin Hoffman,AMy Kleinhans, David Lin, Jessica Mullenix,AMy Tucker, Krishna Pundi",
+      "Abstract": "Explore the reconciliation of time associated with the 32 tasks outlined in the HRS consensus statement on remote monitoring, with a specific focus on the realities of advanced practice provider workflows in EP clinics. This discussion will examine how time is distributed across these tasks, where hidden or unreimbursed work occurs, and how clinics can better define, measure, and align APP effort with operational and clinical expectations. Participants will share practical strategies for workload assessment, role optimization, and staffing models that support efficient, high-quality remote monitoring programs while recognizing the critical contribution of APPs.",
+      "Authors": "Aileen Ferrick, Kevin Hoffman, Amy Kleinhans, David Lin, Jessica Mullenix, Amy Tucker, Krishna Pundi",
       "Affiliation": "White Plains Hospital; Vector Remote Care; HonorHealth; Cardiovascular Division at Hospital of the University of Pennsylvania; U.S. Department of Veterans Affairs Cardiology Office; Sanger Heart & Vascular Institute (SHVI); Palo Alto VA Hospital",
-      "SpeakerTitles": "Assistant Director of Cardiac Electrophysiology Research | Acute Care Nurse Practitioner; CEO & Founder; Electrophysiology Nurse Practitioner; Director of Remote andAMbulatory Monitoring | Professor of Medicine; Cardiac Electrophysiology Nurse Practitioner; Nurse Manager of the Cardiac Device Clinic; Cardiac Electrophysiologist, Health Services and Outcomes Researcher, Innovator",
+      "SpeakerTitles": "Assistant Director of Cardiac Electrophysiology Research | Acute Care Nurse Practitioner; CEO & Founder; Electrophysiology Nurse Practitioner; Director of Remote and Ambulatory Monitoring | Professor of Medicine; Cardiac Electrophysiology Nurse Practitioner; Nurse Manager of the Cardiac Device Clinic; Cardiac Electrophysiologist, Health Services and Outcomes Researcher, Innovator",
+      "isMedtronic": false,
       "session_id": 35,
-      "uid": "s_35",
-      "isMedtronic": false
+      "uid": "s_35"
     },
     {
       "day": "Saturday 9/19",
@@ -499,12 +534,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "Stroke Prevention in 2030 Will Mostly Be: LAAO vs. Pill-in-the-pocket Anticoagulation",
+      "Abstract": "Long gone are the days of vitamin K antagonists as the sole therapy for stroke prevention in persons with atrial fibrillation. How will new anticoagulants, intermittent approaches to anticoagulation, and LAAO change how we prvent stoke in the future? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Christopher Ellis, Kenneth Ellenbogen",
       "Affiliation": "Vanderbilt University Medical Center; Virginia Commonwealth University | Heart Rhythm Society",
       "SpeakerTitles": "Director LAA (Left Atrial Appendage) Program | Director AF Center; Director of Clinical Cardiac Electrophysiology and Pacing | Kimmerling Chair of Cardiology | President",
+      "isMedtronic": false,
       "session_id": 36,
-      "uid": "s_36",
-      "isMedtronic": false
+      "uid": "s_36"
     },
     {
       "day": "Saturday 9/19",
@@ -513,12 +549,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Pioneering the Future: Integrating ASCs into Cardiovascular Practice and Innovation",
+      "Abstract": "This session will explore the transformative role of Ambulatory Surgery Centers (ASCs) in advancing cardiovascular care. Moderated by renowned experts, the discussion will highlight innovative strategies for incorporating ASCs into clinical practice, focusing on efficiency, patient outcomes, and cost-effectiveness, with insights from leading panelists shaping the future of cardiovascular surgery.",
       "Authors": "Arash Aryana, Malcolm Finlay, Dhanunjaya R. Lakkireddy, Christopher Liu, Rohit Mehta, Jodie Hurwitz",
       "Affiliation": "Mercy General Hospital; Barts Heart Centre | Echopoint Medical Ltd | Rhythm AI Ltd; HCA Midwest in Overland Park, Kansas; Weill Cornell Medicine System | New York-Presbyterian Hospital; Sanger Heart and Vascular Institute; North Texas Heart Center",
       "SpeakerTitles": "Cardiac Electrophysiologist & Medical Director; Consultant Cardiologist | Chief Medical Officer | Founder; Executive Medical Director of the Kansas City Heart Rhythm Institute; Director of EP Services; Cardiac Electrophysiologist; Cardiac Electrophysiologist & Partner",
+      "isMedtronic": false,
       "session_id": 37,
-      "uid": "s_37",
-      "isMedtronic": false
+      "uid": "s_37"
     },
     {
       "day": "Saturday 9/19",
@@ -527,12 +564,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Matching the Monitoring Tool to the Clinical Question: Software-Led ECG Analytics in Practice – Powered by AccurKardia",
+      "Abstract": "Mobile cardiac telemetry and near-real-time analytics offer clinical value that remains underused. But recommending real time analysis for every patient produces alert fatigue, unnecessary cost, and noise that erodes clinician trust, while defaulting to retrospective analysis risks missing the signals that demand same-day action. This session asks where real-time monitoring meaningfully changes care, where Holter and extended Holter studies remain the better choice, and what medical-grade analytics, and notification configurations must deliver to make real-time something clinicians can trust and act on. This roundtable reframes real-time versus retrospective monitoring from a winner-take-all debate into a more useful question: which approach fits which clinical scenario. Bringing electrophysiologists, general cardiologists, and technologists together, we will map where true near-real-time mobile cardiac telemetry delivers value that Holter and extended-Holter studies cannot, and where the established approaches remain appropriate. We will then confront the requirement that determines whether MCT’s promise is realized in practice: medical-grade, validated analytics that deliver accuracy and actionable insight at scale, and workflow practices that keep alert fatigue from undermining adoption.",
       "Authors": "Kenneth Civello, Joshua Lampert, Jennifer Peña, Christian Sohns, Natalia Trayanova, PhD, FHRS, Manish Wadhwa, Nicholas Peters",
       "Affiliation": "Suture Health Inc. | Our Lady of the Lake; Mount Sinai Heart in The Mount Sinai Hospital; Medicina Exclusiva; Herz und Diabeteszentrum NRW; Johns Hopkins University; SummaCor | San Diego Arrhythmia Associates | Implicity; Imperial College, Department of Cardiology",
       "SpeakerTitles": "Co-Founder & Chief Medical Officer | Cardiac Electrophysiologist; Cardiac Electrophysiologist & Medical Director of Machine Learning; Founder; Professor of Cardiology | Deputy Director of the Clinic for Electrophysiology and Rhythmology; Professor | Director for AI Research; Chief Executive Officer | Cardiac Electrophysiologist | Medical Advisor; Professor of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 38,
-      "uid": "s_38",
-      "isMedtronic": false
+      "uid": "s_38"
     },
     {
       "day": "Saturday 9/19",
@@ -541,12 +579,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Future of Drug Delivery in EP: Pills are So Yesterday",
+      "Abstract": "Oral medications have been the dominant form of outpatient pharmacotherapy in EP, but could that change? This session will examine how non-oral alternatives can bring value and improve care. The session will also discuss the challenges for non-traditional heart rhythm drug development.",
       "Authors": "David Bharucha, Neal Bhatia, Shilpi Epstein, James Ip, Kristen Bova Campbell",
       "Affiliation": "Milestone Pharmaceuticals, Inc.; Emory University Hospital System; Bayer; Weill Cornell Medicine; Duke University Medical Center",
       "SpeakerTitles": "Chief Medical Officer; Cardiac Electrophysiologist | Co-Director of the Complex Ventricular Tachycardia Ablation Program; Global Clinical Lead, Cardiovascular Clinical Development; Professor; Clinical Pharmacy Specialist and Senior Research Associate in Electrophysiology",
+      "isMedtronic": false,
       "session_id": 39,
-      "uid": "s_39",
-      "isMedtronic": false
+      "uid": "s_39"
     },
     {
       "day": "Saturday 9/19",
@@ -554,13 +593,14 @@ const REAL_DATA = {
       "room": "Roundtable 2",
       "type": "session",
       "Track": "Roundtable",
-      "Title": "Hidden in Plain Sight: Earlier Detection of HFpEF and CardiacAMyloidosis to Improve AF Ablation and LAAC Outcomes – Powered by Ultromics",
+      "Title": "Hidden in Plain Sight: Earlier Detection of HFpEF and Cardiac Amyloidosis to Improve AF Ablation and LAAC Outcomes – Powered by Ultromics",
+      "Abstract": "Patients arrive in the electrophysiology lab carrying diagnoses we can see and conditions we often cannot. Heart failure with preserved ejection fraction (HFpEF) and cardiac amyloidosis (CA) frequently hide behind a presentation of atrial fibrillation, yet both reshape the atrial substrate, the thromboembolic profile, and the durability of the rhythm-control strategies we offer. This roundtable asks a deceptively simple question: if we identified these conditions earlier, before the ablation or the appendage closure, would we make better procedural decisions and achieve better outcomes for our patients? Using Ultromics’ FDA-cleared EchoGo® platform, which detects HFpEF and cardiac amyloidosis from a single, routinely acquired echocardiographic view, the panel will work through how earlier phenotyping could refine candidate selection, pre-procedure patient management, periprocedural planning, and anticoagulation strategy for AF ablation and LAAC. The discussion is designed to be candid and clinically grounded: where the evidence supports a change in practice, where it does not yet, and what an EP-ready screening workflow would actually look like.",
       "Authors": "Nazem Akoum, Tina Baykaner, MD, MPH, Robert Kowal, Roger Owens, Michael Raccuglia, T. Jared Bunch",
       "Affiliation": "University of Washington; Department of Internal Medicine | Division of Cardiovascular Medicine and Electrophysiology | Stanford University; Medtronic; Ultromics, Inc.; US Food & Drug Administration; Division of Cardiovascular Medicine at University of Utah Hospital",
       "SpeakerTitles": "Professor of Medicine; Assistant Professor; Vice President and General Manager, Cardiac Pacing Therapies | Cardiac Electrophysiologist; Chief Commercial Officer, Ultromics, Inc.; Biomedical Engineer | Lead Reviewer; Associate Chief of Cardiology",
+      "isMedtronic": true,
       "session_id": 40,
-      "uid": "s_40",
-      "isMedtronic": true
+      "uid": "s_40"
     },
     {
       "day": "Saturday 9/19",
@@ -569,12 +609,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "HRX AP Shark Tank",
       "Title": "HRX AP Shark Tank – Powered by Medtronic",
+      "Abstract": "The HRX AP Shark Tank is an electrifying competition where allied professionals present groundbreaking ideas that have the potential to revolutionize patient care and advance electrophysiology practice. This event provides a unique platform for APs to pitch their most innovative research concepts, workflow enhancements, or practice-changing solutions to a panel of expert “sharks.” How It Works: – Top 5 Finalists: Authors of the five top‐rated submissions will be invited to present their ideas in person at HRX 2026. – Expert Mentorship: Finalists will receive mentorship prior to their presentation to refine their ideas and maximize their impact. – Live Pitch Session: Finalists will pitch their ideas live at HRX 2026 to a panel “sharks” comprised of industry leaders and EP experts. – Winner Recognition: The most compelling idea will be awarded top honors, gaining visibility and credibility within the AP and EP communities.",
       "Authors": "Kelly Bergen, Hannah Eunice Esmeralda, Vanessa Rhodes, Yekaterina Spivak, Aimee Stefanski, Brynn Dechert-Crooks, Jeroen Hendriks, PhD, RN",
       "Affiliation": "CaroMont Health; Virginia Mason Franciscan Health; Cardiac Solutions; Children’s Hospital of Philadelphia | Welcome Baby 247; Yale New Haven Health System; University of Michigan Congenital Heart Center; Centre for Heart Rhythm Disorders, University of Adelaide",
       "SpeakerTitles": "Electrophysiology Acute Care Nurse Practitioner; Advanced Practice Nurse; Acute Care Nurse Practitioner; Pediatric Electrophysiology Physician Assistant | IBCLC & Co-founder; Nurse Practitioner; Pediatric Electrophysiology Nurse Practitioner; Professor of Cardiovascular Nursing",
+      "isMedtronic": false,
       "session_id": 41,
-      "uid": "s_41",
-      "isMedtronic": true
+      "uid": "s_41"
     },
     {
       "day": "Saturday 9/19",
@@ -583,12 +624,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Autonomous and Assistive EP Procedural Systems",
+      "Abstract": "Robotic navigation, AI-assisted mapping, and automated lesion delivery are redefining procedural EP. This forward-looking session examines the feasibility, safety, and workflow transformation of semi-autonomous and autonomous EP labs.",
       "Authors": "Jim Cheung, David Fischel, Katherine Lindborg, Sanjiv Narayan, Jennifer N. Avari Silva, J. Peter Weiss",
       "Affiliation": "Weill Cornell Medicine; Stereotaxis; Imricor Medical Systems; Stanford University; SentiAR, Inc. | Washington University in St. Louis; Banner University of Arizona Medical Center Phoenix (BUMCP)",
       "SpeakerTitles": "Professor of Medicine; Chairman & CEO; Vice President of Clinical Affairs; Professor of Medicine | Director of the NIH T32 Computational Medicine Training Program (CHIP) | Co-Director of the Arrhythmia Center; Co-Founder & CMO | Associate Professor & Director of Pediatric Electrophysiology; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 42,
-      "uid": "s_42",
-      "isMedtronic": false
+      "uid": "s_42"
     },
     {
       "day": "Saturday 9/19",
@@ -597,12 +639,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Beyond Comorbidity: Integrating AF and Heart Failure Management – Powered by Medtronic",
+      "Abstract": "Atrial fibrillation and heart failure represent a growing dual epidemic, each condition amplifying the progression and complexity of the other. This roundtable will explore the bidirectional pathophysiology linking AF and HF, examining evidence-based strategies for screening, rhythm and rate control, guideline-directed medical therapy, and device-based approaches. Participants will leave with a sharper framework for managing this high-risk patient population across the full spectrum of heart failure phenotypes.",
       "Authors": "Chad Bonhomme, Godefroy Chery, Zhaohui Qiu, Joshua Silverstein, Christian Sohns, Andrea Swain, T. Jared Bunch",
       "Affiliation": "Westfield Physician Holdings, LLC; Penn Medicine, University of Pennsylvania Health System; Shanghai Jiao Tong University School of Medicine; Allegheny Health Network; Herz und Diabeteszentrum NRW; Medtronic; Division of Cardiovascular Medicine at University of Utah Hospital",
       "SpeakerTitles": "President & Electrophysiologist; EP Fellow; Director of Cardiology; Cardiac Electrophysiologist; Professor of Cardiology | Deputy Director of the Clinic for Electrophysiology and Rhythmology; VP, General Manager; Associate Chief of Cardiology",
+      "isMedtronic": true,
       "session_id": 43,
-      "uid": "s_43",
-      "isMedtronic": true
+      "uid": "s_43"
     },
     {
       "day": "Saturday 9/19",
@@ -611,12 +654,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Closing the Gaps in Cardiac Remote Monitoring – Patient Engagement, Connectivity, and Compliance – Powered by CardiacRMS",
-      "Authors": "Nashwa Abdulsalam, Sana Al-Khatib, Tamara Bazar, Daniel Frenkel,AMy Tucker, Kamala Tamirisa, Thomas Deering",
+      "Abstract": "Overcoming the challenges in remote monitoring, from patient engagement to billing, with shared best practices. Remote monitoring of CIEDs is widely adopted, but billing practices, compliance requirements, and documentation standards remain inconsistent and often misunderstood. This roundtable will focus on the practical realities of billing Medicare for CIED remote monitoring, including common pitfalls, audit risks, and how leading programs are structuring workflows to stay compliant. Attendees will leave with a clearer understanding of what is defensible, scalable, and aligned with current regulations.",
+      "Authors": "Nashwa Abdulsalam, Sana Al-Khatib, Tamara Bazar, Daniel Frenkel, Amy Tucker, Kamala Tamirisa, Thomas Deering",
       "Affiliation": "PeaceHealth Southwest Medical Center | Heart Rhythm O2; Duke University; Cardiac RMS by DocGo; Westchester Medical Center; Sanger Heart & Vascular Institute (SHVI); UT Southwestern Medical Center; Piedmont Heart Institute",
       "SpeakerTitles": "Cardiac Electrophysiologist | Social Media Editor; Professor of Medicine at Duke University | Cardiac Electrophysiologist; Co Founder & Managing Partner; Cardiac Electrophysiologist; Nurse Manager of the Cardiac Device Clinic; Clinical Cardiac Electrophysiologist | Associate Professor of Internal Medicine in the Division of Cardiology | Director of Electrophysiology Research; Chief, Cardiovascular Centers of Excellence | Chief, Arrhythmia Center",
+      "isMedtronic": false,
       "session_id": 44,
-      "uid": "s_44",
-      "isMedtronic": false
+      "uid": "s_44"
     },
     {
       "day": "Saturday 9/19",
@@ -625,12 +669,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "The Future of Post-PFA Care: Improving Outcomes Through Continuous Monitoring and AI Insights – Powered by Zywie",
+      "Abstract": "As Pulse Field Ablation (PFA) becomes increasingly adopted, optimizing post-procedural care is critical to improving long-term patient outcomes. Panelists will share real-world experiences and discuss how remote cardiac monitoring and AI-driven insights can help identify arrhythmia recurrence, personalize follow-up strategies, and inform anticoagulation management decisions. Attendees will gain practical perspectives on emerging approaches to delivering more data-driven, patient-centered care after PFA.",
       "Authors": "Edward Gerstenfeld, Melanie Gunawardene, Nino Isakadze, Krishna Pundi, Elaine Wan, Steven L. Zweibel, Paul Zei",
       "Affiliation": "University of California, San Francisco; CCB Frankfurt; Johns Hopkins Hospital; Palo Alto VA Hospital; Columbia University Medical Center, College of Physicians and Surgeons | New York-Presbyterian Hospital; Hartford HealthCare Heart & Vascular Institute; Brigham and Women’s Hospital",
       "SpeakerTitles": "Professor of Medicine; Senior Cardiac Electrophysiologist; Assistant Professor of Medicine | Cardiac Electrophysiologist; Cardiac Electrophysiologist, Health Services and Outcomes Researcher, Innovator; Esther Aboodi Associate Professor of Medicine in Cardiology and Cardiac Electrophysiology | Attending Physician at New York-Presbyterian Hospital; Medical Director of Innovation; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 45,
-      "uid": "s_45",
-      "isMedtronic": false
+      "uid": "s_45"
     },
     {
       "day": "Saturday 9/19",
@@ -639,12 +684,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "Site-less Clinical Trials are the Future of Research",
+      "Abstract": "Clinical trials remain an integral part of innovation and clinical investigation, yet they are more costly than ever before. Can site-less clinical trials help make trials more efficient while providing a better experience for patients? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Gregory Marcus, Valentina Kutyifa, Jose Osorio",
       "Affiliation": "Univ of California, San Francisco | JAMA; University of Rochester Medical Center; HCA Florida Miami | 3PH Alliance | Heart Rhythm Clinical Research Solutions",
       "SpeakerTitles": "Cardiac Electrophysiologist & Professor of Medicine | Associate Chief of Cardiology for Research; Professor of Medicine; Medical Director of Electrophysiology – HCA Florida Miami |  Founder and CMO | Founder and President",
+      "isMedtronic": false,
       "session_id": 46,
-      "uid": "s_46",
-      "isMedtronic": false
+      "uid": "s_46"
     },
     {
       "day": "Saturday 9/19",
@@ -653,12 +699,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Abstract Lunch Hour",
       "Title": "HRX Abstract Lunch Hour",
+      "Abstract": "The HRX Abstract Lunch Hour session provides an opportunity for abstract presenters to share their work in an informal, lively, and engaging setting designed to foster connection, discussion, and collaboration. Attendees can explore emerging research, exchange ideas with colleagues, and engage directly with presenters in a relaxed networking environment. Click on the session for more information regarding the presentations and timing.",
       "Authors": "Leart Ajvazaj, Yong-Soo Baek, Rami Bailony, Revanth Reddy Bandaru, Andreu Climent, Kristie Coleman, Ricardo De Armas, Derek Exner, Han Feng, Salomón Giraldo, MD, Christopher Harvey, Jason T. Jacobson, MD, FHRS, Prapa Kanagaratnam, Josef Kautzner, Matthew S. McKillop, Stavros Mountantonakis, Rachita Navara, Sivaranjini Perikamana Narayanan, Zain Shariff, Ana Sopa, Jomole Varghese Vadakkan, Anand Ganesan, Rakesh Gopinathannair, Robin Leahy, Deepthy Varghese, Nicholas Von Bergen",
       "Affiliation": "91Life; Division Cardiology, Inha University College of Medicine and Inha U Hospital; Enara Health; USF Morsani College of Medicine/HCA Florida Citrus Hospital; Corify Care; Lenox Hill Hospital; MontiAir; HelpWear Inc. | Cumming School of Medicine at University of Calgary; Tulane University School of Medicine; Las Palmas Medical Centers; University of Kansas; New York Medical College-Westchester Medical Center; Imperial College Healthcare, St Mary’s Hospital, Cardiology; IKEM Prague; Baptist Health System, Jacksonville; SafeBeat﻿ Rx; Indian Institute of Technology Palakkad; AICathDesigner | Curtis Senior High School; Indian Institute of Technology Palakkad, Kerala, India; Flinders Medical Centre | Flinders University; Kansas City Heart Rhythm Institute; PaceMate; Emory University Hospital; University of Wisconsin-Madison | Atrility Medical, LLC",
       "SpeakerTitles": "Head of Artificial Intelligence; Associate Professor; CEO and Co-Founder; Cardiology Fellow; CEO & Co-Founder; Director, Cardiac Electrophysiology Research; Founder; Chief Medical Officer | Professor; Assistant Professor; Clinical Rotation | Internal Medicine; Machine Learning Researcher; Cardiac Electrophysiologist; Consultant Cardiologist; Cardiac Electrophysiologist | Director of the Heart Centre and Head of Department of Cardiology; Medical Director, Clinical Cardiac Electrophysiology; Director, Clinical Electrophysiology; Co-founder & CEO of SafeBeat﻿ (YC S21) | EP Cardiologist | Engineer | NIH-funded Principal Investigator; PhD Research Scholar; Creator | Student; Machine Learning Engineer; Research Scholar; Director of Cardiac Electrophysiology | Professor of Medicine; Director of Cardiac Electrophysiology Laboratories; Vice President of Clinical Affairs; Electrophysiology Nurse Practitioner; Professor of Pediatrics in Pediatric Cardiac Electrophysiologist | Co-Founder",
+      "isMedtronic": false,
       "session_id": 47,
-      "uid": "s_47",
-      "isMedtronic": false
+      "uid": "s_47"
     },
     {
       "day": "Saturday 9/19",
@@ -667,12 +714,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "VT Ablation Will Render the ICD Obsolete Within 10 Years",
+      "Abstract": "Catheter ablation of ventricular arrhythmias continues to improve and rates of arrhythmic death continue to decline. Will VT ablation render the ICD obsolete in the future? Will some other game-changing technology replace the defibrillator? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Gerhard Hindricks, MD, PhD, Jeanne Poole, Nikolaos Dagres",
       "Affiliation": "Charite University Hospital, Berlin; University of Washington Medical Center and School of Medicine; Deutsches Herzzentrum der Charite",
       "SpeakerTitles": "Medical Director; Cardiac Electrophysiologist | Director | Professor of Cardiology and Medicine; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 48,
-      "uid": "s_48",
-      "isMedtronic": false
+      "uid": "s_48"
     },
     {
       "day": "Saturday 9/19",
@@ -681,12 +729,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "Interventional MR is Here: How to Launch Your Program, Powered by Imricor",
+      "Abstract": "Magnetic resonance-guided interventions are moving from concept to clinical reality. Join Dr. Kenneth Bilchick as he explores the emergence of interventional MR (iMR) and what it takes to successfully launch an iMR program. This session will highlight the clinical opportunities, operational considerations, and multidisciplinary collaboration required to bring this innovative approach into practice. Attendees will gain insights into how advanced imaging technologies are shaping the future of electrophysiology and cardiovascular care.",
       "Authors": "Kenneth Bilchick",
       "Affiliation": "University of Virginia",
       "SpeakerTitles": "Associate Professor of Medicine | Clinical Cardiologist & Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 49,
-      "uid": "s_49",
-      "isMedtronic": false
+      "uid": "s_49"
     },
     {
       "day": "Saturday 9/19",
@@ -694,13 +743,14 @@ const REAL_DATA = {
       "room": "Roundtable 2",
       "type": "session",
       "Track": "Roundtable",
-      "Title": "Innovation in Signal Detection forAMbulatory ECG Monitoring – Powered by Baxter",
+      "Title": "Innovation in Signal Detection for Ambulatory ECG Monitoring – Powered by Baxter",
+      "Abstract": "Reducing delays in healthcare is needed now more than ever. With growing demand and limited EP capacity, getting patients through to the right care is key. In this Roundtable, clinicians will explore what is needed in cardiac data, and how it should be delivered, to help them confidently move patients forward.",
       "Authors": "Adrian Elliott, Anne Kroman, Christopher Liu, Deepak Padmanabhan, Miguel Valderrabano, Deepthy Varghese, Jodie Hurwitz",
       "Affiliation": "Adelaide University, Royal Adelaide Hospital; Medical University of South Carolina; Weill Cornell Medicine System | New York-Presbyterian Hospital; Sri Jayadeva Institute of Cardiovascular Sciences and Research; Division of Cardiac Electrophysiology at The Methodist Hospital; Emory University Hospital; North Texas Heart Center",
       "SpeakerTitles": "Senior Research Fellow | Associate Professor; Associate Professor of Cardiac Electrophysiology | Director of the Lead Management Program, the Cardiac Device Clinic, and MUSC Heart Station; Director of EP Services; Assistant Professor; Director; Electrophysiology Nurse Practitioner; Cardiac Electrophysiologist & Partner",
+      "isMedtronic": false,
       "session_id": 50,
-      "uid": "s_50",
-      "isMedtronic": false
+      "uid": "s_50"
     },
     {
       "day": "Saturday 9/19",
@@ -709,12 +759,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Low Risk or High Stakes? Navigating AF Alerts From Consumer Devices in Everyday Practice – Powered by Boston Scientific",
+      "Abstract": "Retail wearable arrhythmia devices are becoming more frequently used by both arrhythmia patients and by individuals with no antecedent cardiac history. Management approaches to address detected abnormalities or potential abnormalities remain a work in progress. In this session we will engage a broad-based faculty to identify the major concerns and discuss possible best practice solutions.",
       "Authors": "Sana Al-Khatib, Jason Andrade, Jon Crane, Tony Fiola, Jason T. Jacobson, MD, FHRS, Melissa Middeldorp, Ajay Naik, Thomas Deering",
       "Affiliation": "Duke University; Vancouver General Hospital; Piedmont Heart Institute; Global Cardiac Diagnostic Services Franchise at Boston Scientific; New York Medical College-Westchester Medical Center; Adelaide University; Marengo CIMS Hospital, Care Institute of Medical Sciences",
       "SpeakerTitles": "Professor of Medicine at Duke University | Cardiac Electrophysiologist; Cardiac Electrophysiologist & Director of Electrophysiology; Vice President; Vice President & General Manager; Cardiac Electrophysiologist; Clinical Researcher; Cardiac Electrophysiologist; Chief, Cardiovascular Centers of Excellence | Chief, Arrhythmia Center",
+      "isMedtronic": false,
       "session_id": 51,
-      "uid": "s_51",
-      "isMedtronic": false
+      "uid": "s_51"
     },
     {
       "day": "Saturday 9/19",
@@ -723,12 +774,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Building the Intelligent Cardiology Platform – Bringing together devices, EMRs, remote monitoring, AI, and patient engagement into a unified ecosystem – Powered by 91Life",
+      "Abstract": "As cardiovascular care becomes increasingly digital, health systems are seeking ways to unify data from medical devices, electronic medical records, remote monitoring programs, AI tools, and patient engagement platforms. An intelligent cardiology platform can streamline workflows, improve clinical decision-making, and create a more connected patient experience. This roundtable will explore strategies, challenges, and best practices for building an integrated ecosystem that supports scalable, data-driven cardiovascular care. Question being answered: How do we build the connected platform that makes AI, remote monitoring, and patient engagement work together?",
       "Authors": "Tamara Bazar, Eric Grubman, Ardi Jusufi, Signe Risom, Heather Ross, Benjamin Steinberg, Aimee Stefanski",
       "Affiliation": "Cardiac RMS by DocGo; Yale University School of Medicine; 91Life; Herlev og Gentofte Hospital | Københavns Universitet – University of Copenhagen; Arizona State University; Denver Health Medical Center; Yale New Haven Health System",
       "SpeakerTitles": "Co Founder & Managing Partner; Cardiac Electrophysiologist; Chief Product Officer; Nurse and Senior Researcher | Associate Professor; Assistant Professor | Nurse Practitioner; Director of Cardiac Electrophysiology; Nurse Practitioner",
+      "isMedtronic": false,
       "session_id": 52,
-      "uid": "s_52",
-      "isMedtronic": false
+      "uid": "s_52"
     },
     {
       "day": "Saturday 9/19",
@@ -737,12 +789,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Pitch Competition",
       "Title": "Pitch Competition II",
+      "Abstract": "The HRX 2026 Pitch Competition provides cardiovascular startups with a platform to present their innovative products, services, and solutions to a distinguished panel of judges and potential investors and win cash prices. The top ten teams selected will compete on the HRX Main Stage. Each team will have ~5-10 minutes to creatively pitch their innovative idea, followed by five minutes to field questions from judges and attendees.",
       "Authors": "Tal Avziz, Adarsh Balaji, Andrew Bank, Darryl Davis, Hirohiko Kohjitani",
       "Affiliation": "Vibrant Medical; New York Presbyterian Brooklyn Methodist; Myochron; University of Ottawa Heart Institute; Kyoto University Hospital",
       "SpeakerTitles": "CEO & Co-Founder; Cardiovascular Disease Fellow; CEO & Co-Founder; Clinician Scientist; Lecturer | Medical Doctor",
+      "isMedtronic": false,
       "session_id": 53,
-      "uid": "s_53",
-      "isMedtronic": false
+      "uid": "s_53"
     },
     {
       "day": "Saturday 9/19",
@@ -751,12 +804,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "The Next Frontier of Cardiac Mapping – Powered by Johnson & Johnson MedTech",
+      "Abstract": "Electrophysiology is entering a new era where mapping must do more than reconstruct chambers and display voltage. This roundtable will explore how AI, advanced imaging, tissue characterization, signal clarity, and lesion assessment can reshape the future of cardiac mapping, including how mapping can better define substrate, reduce ambiguity, and help assess therapy effect in the era of PFA. The discussion will also address what next generation mapping platforms need to support clinically and technically, from smarter imaging integration to connected workflows that make procedural intelligence more actionable.",
       "Authors": "Rodolfo Estay, Larry Jackson, II, David Krummen, Sanjiv Narayan, Natalia Trayanova, PhD, FHRS, Jose Osorio",
       "Affiliation": "Johnson & Johnson MedTech | SLG Med Consulting; Duke University Medical Center; University of California San Diego; Stanford University; Johns Hopkins University; HCA Florida Miami | 3PH Alliance | Heart Rhythm Clinical Research Solutions",
       "SpeakerTitles": "Vice President, Global Strategic Marketing | Managing Principal & Founder; Associate Professor of Medicine; Professor of Clinical Medicine; Professor of Medicine | Director of the NIH T32 Computational Medicine Training Program (CHIP) | Co-Director of the Arrhythmia Center; Professor | Director for AI Research; Medical Director of Electrophysiology – HCA Florida Miami |  Founder and CMO | Founder and President",
+      "isMedtronic": false,
       "session_id": 54,
-      "uid": "s_54",
-      "isMedtronic": false
+      "uid": "s_54"
     },
     {
       "day": "Saturday 9/19",
@@ -764,13 +818,14 @@ const REAL_DATA = {
       "room": "Roundtable 1",
       "type": "session",
       "Track": "Roundtable",
-      "Title": "Beyond the ECG: Building the Future of Cardiovascular AI withAMbulatory Monitoring Data – Powered by Philips",
+      "Title": "Beyond the ECG: Building the Future of Cardiovascular AI with Ambulatory Monitoring Data – Powered by Philips",
+      "Abstract": "The next generation of cardiovascular intelligence depends on access to high-quality, structured clinical data. This session will examine how structured discrete data can support machine learning development, improve risk prediction, advance interoperability, and help clinicians track patient trajectories over time to drive earlier interventions and better outcomes.",
       "Authors": "Hamid Ghanbari, Matthew Kalscheur, Valentina Kutyifa, Joshua Lampert, Ian Lentnek, John Triedman, Paul Varosy, David Ludwig",
       "Affiliation": "University of Michigan Cardiovascular Center; University of Wisconsin School of Medicine and Public Health; University of Rochester Medical Center; Mount Sinai Heart in The Mount Sinai Hospital; Philips; Harvard Medical School | Boston Children’s Hospital; VA Eastern Colorado Health Care System | University of Colorado School of Medicine | Veterans Health Administration Cardiology",
-      "SpeakerTitles": "Chair of Innovation, Clinical Associate Professor; Cardiac Electrophysiologist & Clinical Informaticist; Professor of Medicine; Cardiac Electrophysiologist & Medical Director of Machine Learning; Head of Medical and Clinical forAMbulatory Monitoring and Diagnostics (AM&D); Professor of Pediatrics | Former Chief of Pediatric EP; Director of EP | Professor of Medicine | Deputy National Program Director; Strategic Initiatives Lead, ECG Solutions",
+      "SpeakerTitles": "Chair of Innovation, Clinical Associate Professor; Cardiac Electrophysiologist & Clinical Informaticist; Professor of Medicine; Cardiac Electrophysiologist & Medical Director of Machine Learning; Head of Medical and Clinical for Ambulatory Monitoring and Diagnostics (AM&D); Professor of Pediatrics | Former Chief of Pediatric EP; Director of EP | Professor of Medicine | Deputy National Program Director; Strategic Initiatives Lead, ECG Solutions",
+      "isMedtronic": false,
       "session_id": 55,
-      "uid": "s_55",
-      "isMedtronic": false
+      "uid": "s_55"
     },
     {
       "day": "Saturday 9/19",
@@ -779,12 +834,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Next Generation PFA Waveforms: Competing Visions",
+      "Abstract": "Not all PFA is created equal. Waveform design shapes lesion depth, tissue selectivity, safety, and procedural workflow, but competing platforms are taking very different paths. This roundtable will compare the biology and engineering behind next-generation PFA waveforms, examine where the platforms genuinely differ, and ask which features are likely to translate into better, safer, and more durable clinical outcomes.",
       "Authors": "Edward Gerstenfeld, Melanie Gunawardene, Mélèze Hocini, Jacob Koruth, Steven Mickelsen, Dominik K Linz, MD, PhD",
       "Affiliation": "University of California, San Francisco; CCB Frankfurt; Bordeaux University Hospital’s Cardiac Arrhythmias Center | IHU Liryc; Mount Sinai Medical Center; Field Medical | Atraverse Medical, Inc. | Scripps Health; Maastricht University Medical Center",
       "SpeakerTitles": "Professor of Medicine; Senior Cardiac Electrophysiologist; Professor of Cardiology | Deputy Director; Associate Professor; CEO | Board Member | Cardiac Electrophysiologist; Professor | EP Consultant",
+      "isMedtronic": false,
       "session_id": 56,
-      "uid": "s_56",
-      "isMedtronic": false
+      "uid": "s_56"
     },
     {
       "day": "Saturday 9/19",
@@ -793,12 +849,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "Mapping in AF is a Moonshot",
+      "Abstract": "Electrophysiologists have been trying to map fibrillatory conduction for decades with little success. Will that change soon? Is mapping AF a moonshot or a soon-to-be reality. In this session, these experts will hash it out in an engaging exchange.",
       "Authors": "Luigi Di Biase, MD, PhD, FHRS, Sanjiv Narayan, Melanie Gunawardene",
       "Affiliation": "Albert Einstein College of Medicine at Montefiore Health System; Stanford University; CCB Frankfurt",
       "SpeakerTitles": "Clinical Cardiac Electrophysiology; Professor of Medicine | Director of the NIH T32 Computational Medicine Training Program (CHIP) | Co-Director of the Arrhythmia Center; Senior Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 57,
-      "uid": "s_57",
-      "isMedtronic": false
+      "uid": "s_57"
     },
     {
       "day": "Saturday 9/19",
@@ -807,12 +864,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Orchestrating the Next Generation of Cardiac Care for Device Patients: Optimizing Data Interoperability, Streamlining Workflows, and Enhancing Clinical Signals – Powered by Murj",
+      "Abstract": "Continuing the interoperability conversation: how to achieve comprehensive cardiovascular patient care through unification and integration of disparate data sources. CIED, Heart Failure, remote physiologic data, wearables, plus what is in the future? Moving from episodic care to streaming care. How will AI play into this and how can informed digital literacy help us?",
       "Authors": "Chris Irving, Matthew Kalscheur, George Stuart Mendenhall, Tracey Shannon, Yekaterina Spivak, Steven L. Zweibel, David Slotwiner",
       "Affiliation": "Murj Inc.; University of Wisconsin School of Medicine and Public Health; Scripps Memorial Hospital | Everbeat; Westchester Medical Center; Children’s Hospital of Philadelphia | Welcome Baby 247; Hartford HealthCare Heart & Vascular Institute; New York Presbyterian Queens",
       "SpeakerTitles": "Co-Founder, Chief Experience Officer & Head of Design; Cardiac Electrophysiologist & Clinical Informaticist; Cardiac Electrophysiologist and Researcher | Chief Medical Officer; Program Coordinator, Electrophysiology; Pediatric Electrophysiology Physician Assistant | IBCLC & Co-founder; Medical Director of Innovation; Chief of the Division of Cardiology",
+      "isMedtronic": false,
       "session_id": 58,
-      "uid": "s_58",
-      "isMedtronic": false
+      "uid": "s_58"
     },
     {
       "day": "Saturday 9/19",
@@ -821,12 +879,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Precision Energy Delivery in EP: Programmable Ablation Platforms",
+      "Abstract": "We aren’t just changing the tool; we are changing the physics of the procedure. By moving to programmable platforms, we give the electrophysiologist the ‘knobs’ to tune therapy in real-time, moving EP from a practiced art to a precise science.",
       "Authors": "Melanie Gunawardene, Jacob Koruth, Steven Mickelsen, Hiroshi Nakagawa, Andrea Sarkozy, Gerhard Hindricks, MD, PhD",
       "Affiliation": "CCB Frankfurt; Mount Sinai Medical Center; Field Medical | Atraverse Medical, Inc. | Scripps Health; Cleveland Clinic; Ventricular Arrhythmia & Sudden Death Unit, UZ Brussel; Charite University Hospital, Berlin",
       "SpeakerTitles": "Senior Cardiac Electrophysiologist; Associate Professor; CEO | Board Member | Cardiac Electrophysiologist; Cardiac Electrophysiologist & Professor; Professor of Cardiology & Free University of Brussels Director; Medical Director",
+      "isMedtronic": false,
       "session_id": 59,
-      "uid": "s_59",
-      "isMedtronic": false
+      "uid": "s_59"
     },
     {
       "day": "Saturday 9/19",
@@ -835,12 +894,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Extended and Augmented Reality: Reshaping the EP Lab, the Workforce, and the Business of Cardiac Ablations – Powered by SentiAR",
+      "Abstract": "XR/AR in Cardiac Ablation This session will explore the current and future clinical utility of extended and augmented reality in the EP lab — from holographic cardiac mapping to the virtualization of procedural screens — examining where the technology delivers measurable value and what barriers, including hardware and headset form factor, must still be overcome.",
       "Authors": "Enrico Ferro, Nassir Marrouche, Anthony Pompa, Usman Siddiqui, Usha Tedrow, Jagmeet Singh",
       "Affiliation": "Harvard Medical School – Beth Israel Deaconess Medical Center | Smith Center for Outcomes Research; Tulane University School of Medicine; Washington University; Advent Health Celebration; Brigham and Women’s Hospital | Harvard Medical School; Harvard Medical School | Massachusetts General Hospital Heart Center",
       "SpeakerTitles": "Electrophysiologist | Clinical Investigator; Director of Heart and Vascular Institute; Pediatric Electrophysiologist; Electrophysiologist; Director, Clinical Cardiac Electrophysiology Program | Associate Professor of Medicine; Professor of Medicine | Cardiac Electrophysiologist & Founding Director of the Resynchronization and Advanced Cardiac Therapeutics Program",
+      "isMedtronic": false,
       "session_id": 60,
-      "uid": "s_60",
-      "isMedtronic": false
+      "uid": "s_60"
     },
     {
       "day": "Saturday 9/19",
@@ -849,12 +909,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Leveraging New Technology to Expand Access to Arrhythmia Care in Underserved Populations",
+      "Abstract": "Arrhythmia care is often a necessity—but not all patients have equal access to cutting-edge treatments, timely diagnoses, or educational resources. In this interactive session, allied professionals will explore the barriers faced by underserved communities—including rural, low-income, and minority populations—in accessing effective heart rhythm care. We will discuss the role of the allied professional in leveraging telehealth, mobile clinics, wearable technology, community education, and culturally sensitive care models.",
       "Authors": "Simon Henley, Geraldine Lee, Melissa Middeldorp, Michael Raccuglia, Heather Ross, Deepthy Varghese, Jeroen Hendriks, PhD, RN",
       "Affiliation": "Medtronic; University College Cork; Adelaide University; US Food & Drug Administration; Arizona State University; Emory University Hospital; Centre for Heart Rhythm Disorders, University of Adelaide",
       "SpeakerTitles": "Director, HF Market Development – Cardiac Rhythm Management; Professor of Nursing; Clinical Researcher; Biomedical Engineer | Lead Reviewer; Assistant Professor | Nurse Practitioner; Electrophysiology Nurse Practitioner; Professor of Cardiovascular Nursing",
+      "isMedtronic": true,
       "session_id": 61,
-      "uid": "s_61",
-      "isMedtronic": true
+      "uid": "s_61"
     },
     {
       "day": "Saturday 9/19",
@@ -863,12 +924,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Digital Twins in EP: Can Computational Models Guide Real Therapy?",
+      "Abstract": "Can a digital twin move beyond simulation and actually change what happens in the EP lab? This roundtable will examine whether patient-specific computational models can reliably identify arrhythmia mechanisms, predict treatment response, and guide ablation strategy in real time. Experts will debate validation, uncertainty, workflow integration, regulatory expectations, and the evidence needed before digital twins can influence clinical decisions with confidence.",
       "Authors": "Jonathan Chrispin, Anand Ganesan, Tanmay Gokhale, Luke Ralston, Natalia Trayanova, PhD, FHRS, Jeffrey Winterfield, Patrick Boyle",
       "Affiliation": "Johns Hopkins University School of Medicine; Flinders Medical Centre | Flinders University; University of Pittsburgh Medical Center; US Food & Drug Administration; Johns Hopkins University; Medical University of South Carolina; University of Washington",
       "SpeakerTitles": "Associate Professor of Medicine; Associate Professor of Biomedical Engineering; Director of the Ventricular Arrhythmia Ablation Program; Director of Cardiac Electrophysiology | Professor of Medicine; Cardiac Electrophysiology Fellow; Biomedical Engineer; Professor | Director for AI Research; Hank and Laurel Greer Chair in Clinical Cardiac Electrophysiology | Professor of Medicine; Associate Professor of Bioengineering",
+      "isMedtronic": false,
       "session_id": 62,
-      "uid": "s_62",
-      "isMedtronic": false
+      "uid": "s_62"
     },
     {
       "day": "Saturday 9/19",
@@ -877,12 +939,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Nanoparticle Therapies in EP",
+      "Abstract": "Nanoparticles are used in cardiac electrophysiology to restore electrical conduction, target drug delivery, and modulate cellular excitability. This session will investigate how these therapies can be developed, improved, and applied in the future to enhance clinical care and improve outcomes. The session will cover several topics including, but not limited to conductive nanomaterials and targeted therapeutics.",
       "Authors": "Igor R. Efimov, Natalia Trayanova, PhD, FHRS, Miguel Valderrabano, Patrick Boyle",
       "Affiliation": "Northwestern University; Johns Hopkins University; Division of Cardiac Electrophysiology at The Methodist Hospital; University of Washington",
       "SpeakerTitles": "Professor of Biomedical Engineering & Professor of Medicine; Professor | Director for AI Research; Director; Associate Professor of Bioengineering",
+      "isMedtronic": false,
       "session_id": 63,
-      "uid": "s_63",
-      "isMedtronic": false
+      "uid": "s_63"
     },
     {
       "day": "Saturday 9/19",
@@ -891,12 +954,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Leadless Pacing – Act II",
+      "Abstract": "Leadless pacing continues to expand and evolve in clinical practice. We may be approaching the end of the beginning for leadless pacing and entering a new phase of innovation. This session will explore what the key next steps for leadless pacing are, including physiologic pacing, optimal device-device interactions, and options for long-term leadless pacing.",
       "Authors": "Daniel Cantillon, Christophe Garweg, Deepak Padmanabhan, Vivek Y. Reddy, Mikhael El-Chami",
       "Affiliation": "Masimo Corporation; UZ Leuven; Sri Jayadeva Institute of Cardiovascular Sciences and Research; Mount Sinai Health System; Emory University",
       "SpeakerTitles": "Adult EP Cardiologist & Chief Medical Officer; Associate Professor & Cardiologist; Assistant Professor; Director of Cardiac Arrhythmia Services; Electrophysiologist | Professor of Medicine",
+      "isMedtronic": false,
       "session_id": 64,
-      "uid": "s_64",
-      "isMedtronic": false
+      "uid": "s_64"
     },
     {
       "day": "Saturday 9/19",
@@ -905,12 +969,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Should AI Make the Call? Decision Algorithms Under Debate",
+      "Abstract": "This session critically examines AI-powered decision algorithms in healthcare—where they help, where they harm, and what it takes to use them responsibly. We’ll explore real-world examples across triage, diagnosis, risk prediction, and treatment recommendations, highlighting evidence on accuracy, bias, explainability, and clinical impact. Participants will debate key “pro vs. con” questions: Do algorithms improve outcomes or add noise? Who is accountable when AI is wrong? How do we protect privacy while enabling learning health systems? The session also covers practical governance (validation, monitoring, human-in-the-loop workflows, and regulatory considerations) and offers a checklist for evaluating AI tools before deployment in clinical practice.",
       "Authors": "Kristen Bova Campbell, Geraldine Lee, Alanna Miller, Deepthy Varghese, Erica Zado, PAC, FHRS, Lisa Roelle",
       "Affiliation": "Duke University Medical Center; University College Cork; Penn Presbyterian Medical Center; Emory University Hospital; Hospital of the University of Pennsylvania; Washington University in St. Louis & St. Louis Children’s Hospital",
       "SpeakerTitles": "Clinical Pharmacy Specialist and Senior Research Associate in Electrophysiology; Professor of Nursing; Lead Advanced Practitioner, Cardiac Electrophysiology; Electrophysiology Nurse Practitioner; Physician Assistant; Pediatric Electrophysiology Physician Assistant",
+      "isMedtronic": false,
       "session_id": 65,
-      "uid": "s_65",
-      "isMedtronic": false
+      "uid": "s_65"
     },
     {
       "day": "Saturday 9/19",
@@ -919,12 +984,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Innovating with Care: The Connected Heart of Responsible Innovation and Data Interoperability – Powered by RhythmScience",
+      "Abstract": "The landscape of connected care is rapidly changing, where patient data flows across devices, platforms, and care teams in real time. We will explore how emerging interoperability standards are reshaping the way physicians and nurses access and act on cardiac and chronic disease data — without sacrificing privacy, security, or clinical accuracy. Join us for a candid conversation on what responsible innovation actually looks like at the bedside, and how the tools being built today can either earn your trust.",
       "Authors": "Brynn Dechert-Crooks, Shawn Kumar, Michael Lloyd, Kalyanam Shivkumar, David Slotwiner, Kenneth Civello",
       "Affiliation": "University of Michigan Congenital Heart Center; Rhythm Science; Emory University; UCLA Health System, UCLA Cardiac Arrhythmia Center & EP Programs; New York Presbyterian Queens; Suture Health Inc. | Our Lady of the Lake",
       "SpeakerTitles": "Pediatric Electrophysiology Nurse Practitioner; Founder | CEO; Director of EP Laboratories | Professor of Medicine | Cardiac Electrophysiologist; Professor & Director, Center for Interventional Programs; Chief of the Division of Cardiology; Co-Founder & Chief Medical Officer | Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 66,
-      "uid": "s_66",
-      "isMedtronic": false
+      "uid": "s_66"
     },
     {
       "day": "Saturday 9/19",
@@ -933,12 +999,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Cardiac Monitoring – Tools, Technology, Tradeoffs, and Trust – Powered by iRhythm",
+      "Abstract": "As ECG and rhythm data becomes more abundant, accessible, and AI-enabled, electrophysiologists face new questions about trust, actionability, and workflow. The choices of monitoring from single time to fixed uninterrupted, to indefinite interrupted — each with its own technical, clinical, and patient-centered tradeoffs. For example, while trials have shown safety using 48-hour Holter for cessation of post-ablation anticoagulation, their sensitivity is reduced compared to more extended monitoring. This roundtable will examine what types of monitoring to use, to guide major decisions such as stopping oral anticoagulation, how consumer ECGs and wearables are changing the need for prescribed diagnostic monitors, tradeoffs of positive predictive value based on AI and monitor, and represents an appropriate standard of care given that sensitivity and accuracy will vary based on tool and technology. We will also discuss the impact of clinical decision support tools and opportunities for clinical decision making to occur upstream of EP.",
       "Authors": "Jason Andrade, Mina K. Chung, Janet K. Han, Krishna Pundi, Mintu Turakhia, Paul Zei, T. Jared Bunch",
       "Affiliation": "Vancouver General Hospital; Cleveland Clinic; UCLA | VA Greater Los Angeles Healthcare System / UCLA | Digital Health & Virtual Care; Palo Alto VA Hospital; iRhythm Technologies, Inc. | Stanford University; Brigham and Women’s Hospital; Division of Cardiovascular Medicine at University of Utah Hospital",
       "SpeakerTitles": "Cardiac Electrophysiologist & Director of Electrophysiology; Staff Cardiologist & Professor of Medicine in the Section of Pacing and Electrophysiology; Associate Professor of Medicine | Cardiac Electrophysiology; Cardiac Electrophysiologist, Health Services and Outcomes Researcher, Innovator; Chief Medical and Scientific Officer + EVP, Product Management and Innovation | Professor of Medicine and Cardiac Electrophysiologist; Cardiac Electrophysiologist; Associate Chief of Cardiology",
+      "isMedtronic": false,
       "session_id": 67,
-      "uid": "s_67",
-      "isMedtronic": false
+      "uid": "s_67"
     },
     {
       "day": "Saturday 9/19",
@@ -947,12 +1014,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "AP Shark Tank & Pitch Competition Winner Announcement",
+      "Abstract": "Celebrate innovation as the HRX Live 2026 Allied Professional Shark Tank and Pitch Competition winners are announced and recognized for their standout solution advancing the future of heart rhythm care.",
       "Authors": "Brynn Dechert-Crooks, Jeroen Hendriks, PhD, RN, Robert Kowal, Mintu Turakhia, Jonathan Piccini, Prashanthan Sanders",
       "Affiliation": "University of Michigan Congenital Heart Center; Centre for Heart Rhythm Disorders, University of Adelaide; Medtronic; iRhythm Technologies, Inc. | Stanford University; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; University of Adelaide",
       "SpeakerTitles": "Pediatric Electrophysiology Nurse Practitioner; Professor of Cardiovascular Nursing; Vice President and General Manager, Cardiac Pacing Therapies | Cardiac Electrophysiologist; Chief Medical and Scientific Officer + EVP, Product Management and Innovation | Professor of Medicine and Cardiac Electrophysiologist; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": true,
       "session_id": 68,
-      "uid": "s_68",
-      "isMedtronic": true
+      "uid": "s_68"
     },
     {
       "day": "Saturday 9/19",
@@ -961,12 +1029,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Abstract Happy Hour",
       "Title": "HRX Abstract Happy Hour II",
+      "Abstract": "The HRX Abstract Happy Hour session provides an opportunity for abstract presenters to share their work in an informal, lively, and engaging setting designed to foster connection, discussion, and collaboration. Attendees can explore emerging research, exchange ideas with colleagues, and engage directly with presenters in a relaxed networking environment. Click on the session for more information regarding the presentations and timing.",
       "Authors": "Michel Abou Khalil, Faraz Ahmad, Leart Ajvazaj, Manav Bhushan, Kashif Chaudhry, Ashley Cooper, Jordan Craig, Jacob Cushing, Michiel De Wever, Alex El Darzi, Shaun Evans, Derek Exner, Sanjaya Gupta, Yaariv Khaykin, Jonathan Lipton, Yingshuo Liu, Christian Massad, Yazan Mohsen, Daniel Musikantow, Alexei Nakonechnyi, Anthony Pompa, Lisa Roelle, Uttsav Sandesara, Kavya Sinha, Raghav Sriram, Ajay Tripuraneni, Gaurav Upadhyay, Jomole Varghese Vadakkan, Rohan Viswanathan, Tae Kyung Yoo, Apo Youssef, Yuanyuan Zhang, Thomas Deering, Nassir Marrouche, Jennifer N. Avari Silva, Konstantinos Siontis, MD, FHRS, Benjamin Steinberg, Emma Svennberg, MD, PhD",
       "Affiliation": "Tulane Research Innovation for Arrhythmia Discovery (TRIAD); Northwestern Medicine; 91Life; Fourth Frontier; Catawba Valley Medical Center; Washington University School of Medicine in St. Louis; Boston Scientific; University of Kansas Medical Center; Ziekenhuis Oost Limburg; TRIAD-Tulane University; Centre for Heart Rhythm Disorders in Adelaide; HelpWear Inc. | Cumming School of Medicine at University of Calgary; Saint Luke’s Mid-America Heart Institute; Myant Health; Fiona Stanley Hospital; Tulane University School of Medicine; TRIAD; Johns Hopkins University; Mount Sinai Hospital; University of Rochester; Washington University; Washington University in St. Louis & St. Louis Children’s Hospital; Wake Forest Baptist Medical Center; Texas Heart Institute at Baylor College of Medicine; University of Michigan; Baylor Scott & White Health; The University of Chicago Medicine; Indian Institute of Technology Palakkad, Kerala, India; Deborah Heart and Lung Center; Boston Medical Center; Valley Health System – ISMMS; University of Georgia; Piedmont Heart Institute; SentiAR, Inc. | Washington University in St. Louis; Mayo Clinic; Denver Health Medical Center; Karolinska University Hospital",
       "SpeakerTitles": "Medical Intern & Research Fellow; Medical Director for AI Strategy, Bluhm Cardiovascular Center for AI; Head of Artificial Intelligence; CEO & Co-Founder; Director, Cardiac Electrophysiology; Clinical Research Study Assistant; Principal Data Scientist; Internal Medicine Resident; PhD researcher; Cardiology Post-Doc; Electrophysiology Fellow & PhD Candidate; Chief Medical Officer | Professor; Electrophysiologist; Chief Medical Information Officer; Cardiologist Electrophysiologist; Biostatistician; Research Fellow; Research Scientist; Cardiac Electrophysiologist; Research Assistant Professor; Pediatric Electrophysiologist; Pediatric Electrophysiology Physician Assistant; Cardiovascular Disease Fellow; Assistant Professor of Cardiovascular Science; Researcher; Cardiac Electrophysiologist; Professor of Medicine; Research Scholar; Cardiology Fellow; Cardiology Fellow; PGY-2 Internal Medicine Resident; Postdoctoral Associate; Chief, Cardiovascular Centers of Excellence | Chief, Arrhythmia Center; Director of Heart and Vascular Institute; Co-Founder & CMO | Associate Professor & Director of Pediatric Electrophysiology; Cardiac Electrophysiologist | Assistant Professor of Medicine at Mayo Clinic | Director of the Cardiac Radioablation; Director of Cardiac Electrophysiology; Assistant professor | Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 69,
-      "uid": "s_69",
-      "isMedtronic": false
+      "uid": "s_69"
     }
   ],
   "Sunday 9/20": [
@@ -977,12 +1046,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "Sunday Opening Remarks",
+      "Abstract": "Join Executive Producer Dr. Jonathan Piccini and Co-Producer Dr. Prashanthan Sanders as they kick off the final day of HRX Live 2026. Reflecting on the biggest insights and standout moments from the meeting, they’ll set the stage for a dynamic half-day of programming focused on what’s next in cardiovascular innovation. They’ll also preview one of the meeting’s most anticipated milestones: the inaugural HRX Late-Breaking Clinical Trials, bringing groundbreaking new data and discoveries to the HRX stage for the first time. Don’t miss this energizing start to the conference finale.",
       "Authors": "Jonathan Piccini, Prashanthan Sanders",
       "Affiliation": "Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; University of Adelaide",
       "SpeakerTitles": "Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 70,
-      "uid": "s_70",
-      "isMedtronic": false
+      "uid": "s_70"
     },
     {
       "day": "Sunday 9/20",
@@ -991,12 +1061,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Featured Keynote",
       "Title": "The Spark That Changed Electrophysiology: Discovery, Disruption, and the Future of Arrhythmia Care",
+      "Abstract": "Few electrophysiologists have shaped the field as deeply or as repeatedly as Professor Michel Haïssaguerre. Best known for the seminal discovery that pulmonary vein triggers initiate atrial fibrillation, a finding that transformed AF from a largely medical disease into an ablation target, his contribution extends far beyond a single landmark observation. Across his career, Professor Haïssaguerre has been at the forefront of the ideas, techniques and technologies that now define daily electrophysiology practice. His work helped establish curative catheter ablation for AVNRT and AVRT, advanced the mechanistic understanding and ablation of ventricular fibrillation, and the recognition of early repolarisation syndromes. He has also been closely linked to the development and clinical adoption of tools that changed how electrophysiologists see and treat arrhythmias, including circular pulmonary vein mapping, and multipolar mapping technologies such as the PentaRay catheter. More recently focused on non-invasive mapping to improve our understanding of arrhythmia mechanisms. In this Featured Keynote conversation, Professor Haïssaguerre joins Professor Prashanthan Sanders to reflect on a career defined by clinical observation, scientific courage and technological innovation. The discussion will trace how disruptive ideas move from the laboratory and catheterisation laboratory into global standards of care: from the early days of supraventricular tachycardia ablation, through the pulmonary vein discovery in AF, to ventricular fibrillation mapping, inherited arrhythmia syndromes, and the next frontiers in ablation science. This session offers attendees a rare opportunity to hear from one of the defining innovators of modern electrophysiology, not only about the discoveries that changed the field, but about the mindset required to make them.",
       "Authors": "Michel Haissaguerre, Prashanthan Sanders",
       "Affiliation": "CHU Bordeaux; University of Adelaide",
       "SpeakerTitles": "Cardiac Electrophysiologist & Professor; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 71,
-      "uid": "s_71",
-      "isMedtronic": false
+      "uid": "s_71"
     },
     {
       "day": "Sunday 9/20",
@@ -1005,12 +1076,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Latent Intelligence and Patient Needs: Clinical Judgment in AI-Driven Electrophysiology",
+      "Abstract": "This session will explore how the non-verbal internal reasoning states of AI models will change and impact clinical care. In this dynamic session, the challenges and opportunities for latent intelligence in future EP care will be reviewed and debated with traditional human intelligence and judgment.",
       "Authors": "Bleron Baraliu, Zak Loring, Ivan Nenadic Wood, Peter Noseworthy, Natalia Trayanova, PhD, FHRS, Joshua Lampert",
       "Affiliation": "91Life; Duke University Medical Center; Duke University Health System; Mayo Clinic; Johns Hopkins University; Mount Sinai Heart in The Mount Sinai Hospital",
       "SpeakerTitles": "CEO; Cardiac Electrophysiologist; Cardiology Fellow, Professor of Biomedical Engineering, Medical Technology Consultant; Professor of Medicine, Chair of the Division of Heart Rhythm Services, and Medical Director of Business Development; Professor | Director for AI Research; Cardiac Electrophysiologist & Medical Director of Machine Learning",
+      "isMedtronic": false,
       "session_id": 72,
-      "uid": "s_72",
-      "isMedtronic": false
+      "uid": "s_72"
     },
     {
       "day": "Sunday 9/20",
@@ -1019,12 +1091,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "What Does a Fully Connected EP Lab Look Like? Bridging Data, Imaging, and Workflow in Complex Ablation – Powered by Siemens Healthineers",
+      "Abstract": "While EP labs are equipped with advanced imaging, mapping, and procedural technologies, integrating these systems into a seamless workflow remains a challenge in practice. This panel will explore how today’s multimodality environments function during real procedures and where connectivity works, where it falls short, and what true coordination across systems should look like to support complex ablation cases.",
       "Authors": "Michael Lloyd, Suneet Mittal, Babak Nazer, Miguel Valderrabano, Jennifer N. Avari Silva",
       "Affiliation": "Emory University; Valley Health System; University of Washington; Division of Cardiac Electrophysiology at The Methodist Hospital; SentiAR, Inc. | Washington University in St. Louis",
       "SpeakerTitles": "Director of EP Laboratories | Professor of Medicine | Cardiac Electrophysiologist; Chair, Cardiovascular Service Line; Professor of Medicine and Bioengineering | Cardiac Electrophysiologist; Director; Co-Founder & CMO | Associate Professor & Director of Pediatric Electrophysiology",
+      "isMedtronic": false,
       "session_id": 73,
-      "uid": "s_73",
-      "isMedtronic": false
+      "uid": "s_73"
     },
     {
       "day": "Sunday 9/20",
@@ -1033,12 +1106,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Next Generation Mediastinal and Epicardial Technologies & Techniques",
+      "Abstract": "The vast majority of minimally invasive EP techniques focus on endocardial approaches, however, there are tremendous opportunities to improve existing and pioneer novel interventions that can be targeted to the pericardial space and the epicardium. This session will focus on emerging therapeutics targeting the mediastinum and epicardial space.",
       "Authors": "Ed Manicka, Kalyanam Shivkumar, Usha Tedrow, Venkatakrishna Tholakanahalli, Harikrishna Tandri",
       "Affiliation": "Calyan Technolgies, Inc.; UCLA Health System, UCLA Cardiac Arrhythmia Center & EP Programs; Brigham and Women’s Hospital | Harvard Medical School; University of Minnesota | Minneapolis VA Health Care System; Vanderbilt University Medical Center",
       "SpeakerTitles": "Founder; Professor & Director, Center for Interventional Programs; Director, Clinical Cardiac Electrophysiology Program | Associate Professor of Medicine; Professor of Medicine | Chief-Cardiac Electrophysiology; Professor of Medicine; Chief of Electrophsyiology",
+      "isMedtronic": false,
       "session_id": 74,
-      "uid": "s_74",
-      "isMedtronic": false
+      "uid": "s_74"
     },
     {
       "day": "Sunday 9/20",
@@ -1047,12 +1121,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Changing How We Predict, Prevent, and Treat Sudden Cardiac Arrest",
+      "Abstract": "Sudden cardiac arrest still strikes too often without warning, and survival still depends too heavily on chance. This roundtable will examine how emerging risk markers, AI-enabled prediction, wearables, implantable technologies, genetics, and new resuscitation and defibrillation strategies could transform the pathway from late rescue to earlier prevention. Experts will debate what is ready for practice now, what remains unproven, and how precision approaches might finally change who we identify, protect, and save.",
       "Authors": "Alan Cheng, Mina K. Chung, Rakesh Gopinathannair, Richard Price, Luke Ralston, Konstantinos Siontis, MD, FHRS, Brianna Wolfe, Mehak Dhande",
       "Affiliation": "Medtronic; Cleveland Clinic; Kansas City Heart Rhythm Institute; PulsePoint Foundation; US Food & Drug Administration; Mayo Clinic; Georgia Arrhythmia Consultants and Research Institute | Georgia Arrhythmia Foundation & S.C.A.R.E; Stanford University, Stanford Healthcare",
       "SpeakerTitles": "Chief Medical Officer of the Medtronic Cardiac Rhythm Management Operating Unit; Staff Cardiologist & Professor of Medicine in the Section of Pacing and Electrophysiology; Director of Cardiac Electrophysiology Laboratories; Founder &  President; Biomedical Engineer; Cardiac Electrophysiologist | Assistant Professor of Medicine at Mayo Clinic | Director of the Cardiac Radioablation; Clinical Exercise Physiologist and Director of Operations | Executive Director; Interventional Cardiac Electrophysiologist | Physician Scientist",
+      "isMedtronic": true,
       "session_id": 75,
-      "uid": "s_75",
-      "isMedtronic": true
+      "uid": "s_75"
     },
     {
       "day": "Sunday 9/20",
@@ -1061,40 +1136,43 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Next Generation Stroke Prevention: Factor XI Inhibition in Atrial Fibrillation – Powered by BMS/J&J Alliance",
+      "Abstract": "Stroke prevention in atrial fibrillation has always required a trade-off between preventing clot and provoking bleeding. Factor XI inhibition may change that equation. This roundtable will examine whether this emerging drug class can deliver effective stroke prevention with a lower bleeding burden, which patients may benefit most, how the latest trial evidence should be interpreted, and where Factor XI inhibitors could sit alongside established anticoagulants and left atrial appendage occlusion.",
       "Authors": "Kristen Bova Campbell, Jeffrey Healey, William McIntyre, MD, PhD, FRCPC, Rod Passman, Benjamin Steinberg",
       "Affiliation": "Duke University Medical Center; McMaster University; St Joseph’s Healthcare Hamilton; Northwestern University Feinberg School of Medicine; Denver Health Medical Center",
       "SpeakerTitles": "Clinical Pharmacy Specialist and Senior Research Associate in Electrophysiology; Professor | Director, Division of Cardiology; Cardiologist | Assistant Professor; Jules Reingold Professor of Electrophysiology & Cardiac Electrophysiologist; Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 76,
-      "uid": "s_76",
-      "isMedtronic": false
+      "uid": "s_76"
     },
     {
       "day": "Sunday 9/20",
       "time": "09:35AM – 10:35AM",
       "room": "Main Stage 1",
       "type": "session",
-      "Track": "Late-Breaking Clinical Trial",
-      "Title": "Late-Breaking Clinical Trials: Advances in Pacing, Cardiac Rhythm Devices & Digital Care",
+      "Track": "Late-Breaking Clinical Trials",
+      "Title": "Advances in Pacing, Cardiac Rhythm Devices & Digital Care",
+      "Abstract": "This late-breaking clinical trials session highlights emerging innovations that are shaping the future of cardiac rhythm management. Presentations feature first-in-human and early feasibility data on novel pacing technologies, advances in physiologic pacing guided by imaging, next-generation extravascular ICD sensing capabilities, digital solutions to optimize antiarrhythmic drug management, and new insights from the MODULAR ATP trial. Together, these studies showcase cutting-edge research aimed at improving procedural success, expanding access to care, and advancing outcomes for patients with cardiac arrhythmias.",
       "Authors": "Minglong Chen, Edward Gerstenfeld, Michael Lloyd, Petr Neuzil, Pugazhendhi Vijayaraman, Kenneth Ellenbogen, Margaret Infeld, Jeffrey Winterfield",
       "Affiliation": "Jiangsu Province Hospital; University of California, San Francisco; Emory University; Na Homolce Hospital; Geisinger Heart & Vascular Institute; Virginia Commonwealth University | Heart Rhythm Society; Tufts Medical Center; Medical University of South Carolina",
       "SpeakerTitles": "Professor of Medicine; Professor of Medicine; Director of EP Laboratories | Professor of Medicine | Cardiac Electrophysiologist; Head of the Department of Cardiology; Director, CCEP Fellowship; Director of Clinical Cardiac Electrophysiology and Pacing | Kimmerling Chair of Cardiology | President; Cardiac Electrophysiologist | Assistant Professor; Hank and Laurel Greer Chair in Clinical Cardiac Electrophysiology | Professor of Medicine",
+      "isMedtronic": false,
       "session_id": 77,
-      "uid": "s_77",
-      "isMedtronic": false
+      "uid": "s_77"
     },
     {
       "day": "Sunday 9/20",
       "time": "09:35AM – 10:35AM",
       "room": "Main Stage 2",
       "type": "session",
-      "Track": "Late-Breaking Clinical Trial",
-      "Title": "Late-Breaking Clinical Trials: Innovations in Ablation & Electrophysiology Technologies",
+      "Track": "Late-Breaking Clinical Trials",
+      "Title": "Innovations in Ablation & Electrophysiology Technologies",
+      "Abstract": "This late-breaking clinical trials session showcases novel therapies and technologies advancing the treatment of atrial and ventricular arrhythmias. Presentations include first-in-human and multicenter clinical data on wearable neuromodulation following pulse field ablation, next-generation pulse field ablation techniques, innovative lesion creation strategies for ventricular tachycardia, map-guided redo ablation for persistent atrial fibrillation, and 4D intracardiac echocardiography to support left atrial appendage closure and concomitant ablation procedures. Together, these studies highlight emerging approaches designed to improve procedural precision, safety, and long-term rhythm outcomes in electrophysiology.",
       "Authors": "Dhanunjaya R. Lakkireddy, Devi G Nair, MD, FHRS, Douglas Packer, Vivek Y. Reddy, Ravi Ranjan, Andrea Sarkozy, Harikrishna Tandri",
       "Affiliation": "HCA Midwest in Overland Park, Kansas; St. Bernards Medical Center & Arrhythmia Research Group; Intermountain Medical Center; Mount Sinai Health System; University of Utah; Ventricular Arrhythmia & Sudden Death Unit, UZ Brussel; Vanderbilt University Medical Center",
       "SpeakerTitles": "Executive Medical Director of the Kansas City Heart Rhythm Institute; Director of the Cardiac Electrophysiology & Research; Professor of Medicine; Director of Cardiac Arrhythmia Services; Section Chief of Cardiac Electrophysiology; Professor of Cardiology & Free University of Brussels Director; Professor of Medicine; Chief of Electrophsyiology",
+      "isMedtronic": false,
       "session_id": 78,
-      "uid": "s_78",
-      "isMedtronic": false
+      "uid": "s_78"
     },
     {
       "day": "Sunday 9/20",
@@ -1103,12 +1181,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Hot Takes Exchange",
       "Title": "We Can Cure Atrial Fibrillation",
+      "Abstract": "Sometimes innovation is sparked by outrageous questions. In the future, might we be able to cure atrial fibrillation? This debate will let two experts hash it out in an engaging exchange.",
       "Authors": "Mélèze Hocini, Dominik K Linz, MD, PhD, Kamala Tamirisa",
       "Affiliation": "Bordeaux University Hospital’s Cardiac Arrhythmias Center | IHU Liryc; Maastricht University Medical Center; UT Southwestern Medical Center",
       "SpeakerTitles": "Professor of Cardiology | Deputy Director; Professor | EP Consultant; Clinical Cardiac Electrophysiologist | Associate Professor of Internal Medicine in the Division of Cardiology | Director of Electrophysiology Research",
+      "isMedtronic": false,
       "session_id": 79,
-      "uid": "s_79",
-      "isMedtronic": false
+      "uid": "s_79"
     },
     {
       "day": "Sunday 9/20",
@@ -1117,12 +1196,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "The Next PFA Frontier – Ventricular Ablation",
+      "Abstract": "Pulsed field ablation is the energy modality of choice in catheter ablation of atrial fibrillation. While early studies suggest that PFA has significant advantages in the ventricle, ventricular PFA remains an area of intense innovation and discovery. This session will explore the next steps, challenges, and opportunities for PFA in ventricular ablation both today and in the future.",
       "Authors": "Steven Mickelsen, Vivek Y. Reddy, Usha Tedrow, Edward Gerstenfeld",
       "Affiliation": "Field Medical | Atraverse Medical, Inc. | Scripps Health; Mount Sinai Health System; Brigham and Women’s Hospital | Harvard Medical School; University of California, San Francisco",
       "SpeakerTitles": "CEO | Board Member | Cardiac Electrophysiologist; Director of Cardiac Arrhythmia Services; Director, Clinical Cardiac Electrophysiology Program | Associate Professor of Medicine; Professor of Medicine",
+      "isMedtronic": false,
       "session_id": 80,
-      "uid": "s_80",
-      "isMedtronic": false
+      "uid": "s_80"
     },
     {
       "day": "Sunday 9/20",
@@ -1131,12 +1211,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Regulating AI Tools – A New Frontier",
+      "Abstract": "Innovation in AI continues to accelerate. The development of AI technologies raises important regulatory questions and processes as well as concerns about data ownership and data privacy. This session will delve into the regulatory concerns and pathways surrounding AI tools and technologies.",
       "Authors": "Mehak Dhande, Tony Fiola, Jackson Hair, Théophile Mohr Durdez, Chanda Owens, Yekaterina Spivak, Rachel Yung, Zak Loring",
       "Affiliation": "Stanford University, Stanford Healthcare; Global Cardiac Diagnostic Services Franchise at Boston Scientific; U.S. Food and Drug Administration; Volta Medical; iRhythm Technologies, Inc.; Children’s Hospital of Philadelphia | Welcome Baby 247; Duke University Medical Center",
       "SpeakerTitles": "Interventional Cardiac Electrophysiologist | Physician Scientist; Vice President & General Manager; Biomedical Engineer; CEO; Senior Vice President Quality & Regulatory; Pediatric Electrophysiology Physician Assistant | IBCLC & Co-founder; General Engineer; Cardiac Electrophysiologist",
+      "isMedtronic": false,
       "session_id": 81,
-      "uid": "s_81",
-      "isMedtronic": false
+      "uid": "s_81"
     },
     {
       "day": "Sunday 9/20",
@@ -1145,12 +1226,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Session",
       "Title": "Innovation & Development of New Tools for Lead Extraction",
+      "Abstract": "Lead management remains an important part of contemporary electrophysiologic care. While extraction tools have relied on blunt mechanical dissection, rotational cutting tools, laser assisted technologies, and snares, new innovations are on the horizon. This session will explore the key opportunities for innovation in lead extraction procedures.",
       "Authors": "Ulrika Birgersdotter-Green, Mark Breyen, Pamela Mason, George Stuart Mendenhall, Oliver Monfredi, Jonathan Piccini",
       "Affiliation": "UC San Diego Health System; Philips; University of Virginia Health System; Scripps Memorial Hospital | Everbeat; University of Virginia; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center",
       "SpeakerTitles": "Cardiac Electrophysiologist | Professor of Medicine; Vice President of Research and Development; Professor of Medicine; Cardiac Electrophysiologist and Researcher | Chief Medical Officer; Associate Professor of Medicine, Medical Director of the Complex Lead Management and Extraction Center of Excellence; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section",
+      "isMedtronic": false,
       "session_id": 82,
-      "uid": "s_82",
-      "isMedtronic": false
+      "uid": "s_82"
     },
     {
       "day": "Sunday 9/20",
@@ -1159,12 +1241,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Cardioneuroablation: Which Patients, Which Endpoints, What Evidence?",
+      "Abstract": "Cardioneuroablation is moving rapidly from experimental concept toward clinical practice, but the field still lacks consensus on who should be treated, how success should be measured, and what evidence is sufficient for adoption. This session brings together leading experts to debate patient selection, procedural targets, endpoint definition, durability, safety, and trial design. The discussion will separate established practice from unresolved questions and define what the field must prove next.",
       "Authors": "Tolga Aksu, Piotr Kulakowski, Varun Malik, Stavros Stavrakis, Henry Huang",
       "Affiliation": "Istinye University Medical Park Florya Hospital, Department of Cardiology; Medical Center for Postgraduate Education, Grochowski Hospital; Adelaide University; University of Chicago | Journal of Interventional Cardiac Electrophysiology",
       "SpeakerTitles": "Professor of Cardiology and Cardiac Electrophysiology; Professor of Cardiology | Head of Electrophysiology Laboratory; Cardiac Electrophysiologist; Clinical Electrophysiologist | Associate Professor; Professor of Medicine, Director of Cardiac Electrophysiology | Editor-in-Chief",
+      "isMedtronic": false,
       "session_id": 83,
-      "uid": "s_83",
-      "isMedtronic": false
+      "uid": "s_83"
     },
     {
       "day": "Sunday 9/20",
@@ -1173,12 +1256,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "Roundtable",
       "Title": "Getting New EP Devices Approved: Evidence, Regulation, and Reimbursement",
+      "Abstract": "A brilliant prototype does not become a successful therapy by accident. This roundtable will follow the full journey from first concept to clinical adoption. Examining the evidence, regulatory strategy, trial design, reimbursement, and commercial decisions that determine whether a new EP device reaches patients. Experts will expose the common failure points, debate what “enough evidence” really means, and define how innovators can move faster without compromising safety or credibility.",
       "Authors": "Stephen Browning, Kevin Corriveau, Nassir Marrouche, Maria Stewart, J. Peter Weiss, Paul Wang",
       "Affiliation": "US Food & Drug Administration; Johnson & Johnson Medical Devices; Tulane University School of Medicine; Boston Scientific; Banner University of Arizona Medical Center Phoenix (BUMCP); Stanford Medicine",
       "SpeakerTitles": "Assistant Division Director; Director, U.S. Health Economics & Market Access; Director of Heart and Vascular Institute; Vice President, Health Economics & Market Access, AF Solutions and CRM-Dx; Cardiac Electrophysiologist; Director of the Stanford Cardiac Arrhythmia Service & Professor of Medicine and of Bioengineering",
+      "isMedtronic": false,
       "session_id": 84,
-      "uid": "s_84",
-      "isMedtronic": false
+      "uid": "s_84"
     },
     {
       "day": "Sunday 9/20",
@@ -1187,12 +1271,13 @@ const REAL_DATA = {
       "type": "session",
       "Track": "General",
       "Title": "Closing Remarks from HRX Live 2026",
+      "Abstract": "As HRX Live 2026 comes to a close, join Executive Producer Jonathan Piccini and Co-Producer Prashanthan Sanders for a look back at the highlights, innovations, and unforgettable moments that defined this year’s experience. Together, they’ll reflect on key takeaways, celebrate the HRX community, and recognize the people who helped bring the event to life. The session will also mark an exciting leadership transition as Prashanthan Sanders is introduced as the Executive Producer for HRX Live 2027, alongside incoming Co-Producer Devi Nair, offering a first glimpse at what’s ahead for the next chapter of HRX Live.",
       "Authors": "Devi G Nair, MD, FHRS, Jonathan Piccini, Prashanthan Sanders",
       "Affiliation": "St. Bernards Medical Center & Arrhythmia Research Group; Duke University Hospital and the Duke Clinical Research Institute | Duke Heart Center; University of Adelaide",
       "SpeakerTitles": "Director of the Cardiac Electrophysiology & Research; Cardiac Electrophysiologist & Professor of Medicine and Population Health | Director of the Cardiac Electrophysiology section; Cardiac Electrophysiologist & Director of Cardiac Electrophysiology",
+      "isMedtronic": false,
       "session_id": 85,
-      "uid": "s_85",
-      "isMedtronic": false
+      "uid": "s_85"
     }
   ]
 }
