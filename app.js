@@ -2336,32 +2336,18 @@ function buildNodeMarkerInnerHtml(items, chosenUid, time, prevItem) {
         resolvedPrev = getEffectivePrevItemAt(time);
     }
 
-    // Row 1 ("from") items: every starred session active in the path
-    // interval immediately before this node, so the user sees ALL
-    // ongoing starred sessions at the handoff — not just the one they
-    // were following. Falls back to the single resolvedPrev (e.g. a
-    // break/meal at start-of-day) when the path has nothing prior.
+    // Row 1 is the actual source of a resolved path transition. Other
+    // concurrent starred sessions belong in the "other sessions" list;
+    // showing them here makes an unlabeled extra dot look like the
+    // transition source.
     let prevItems = getPrevPathActiveItems(currentRenderPath, time);
-    // Detect the "transitioning from a break/free time" case: the
-    // path interval immediately before this node had no starred
-    // sessions, so resolvedPrev (typically a break or non-starred
-    // continuing session) is what the user was actually attending.
-    // Make sure prevItems reflects that single attended item so
-    // row 1 / the top stub / the connector curve all agree on the
-    // same color and column. Otherwise we get inconsistencies like
-    // a stub in one color and an empty row 1, or vice versa.
-    const noStarredPrior = prevItems.length === 0;
-    if (noStarredPrior && resolvedPrev && resolvedPrev.session) {
+    if (resolvedPrev && resolvedPrev.session) {
         prevItems = [resolvedPrev];
     }
     prevItems = prevItems.slice().sort(compareItemsByTrackRoom);
 
-    // The "chosen" prior — the single session the user was actually
-    // attending in the prior interval — is what the connector curve
-    // and top stub anchor on. When there are starred items prior,
-    // it is the path's chosen uid (resolvedPrev). When the prior
-    // interval was a break/free time, resolvedPrev IS that break and
-    // is the only item in prevItems, so the same logic finds it.
+    // The chosen prior is the displayed source for the connector,
+    // top stub, and filled upper dot.
     const prevChosenUid = (resolvedPrev && resolvedPrev.session
         && resolvedPrev.session.uid) || null;
     let prevChosenIdx = prevChosenUid
@@ -2413,17 +2399,9 @@ function buildNodeMarkerInnerHtml(items, chosenUid, time, prevItem) {
     // the row-wrap on mobile.
     const SVG_H = 14;
     const STUB_H = 10;
-    // The "from" color drives the top stub and the start of the
-    // connector gradient. Source it from the prior chosen item in
-    // prevItems so it always matches the dot in row 1 — this keeps
-    // colors consistent across break↔session transitions where
-    // resolvedPrev (a break) and the path's prior items can differ.
-    const prevAnchorItem = (prevChosenIdx >= 0 && prevItems[prevChosenIdx])
-        || resolvedPrev
-        || null;
-    const prevColor = (prevAnchorItem && prevAnchorItem.session)
-        ? getSessionAccentColor(prevAnchorItem.session, prevAnchorItem.session.Track)
-        : null;
+    // The top dot/stub and gradient origin use the visible prior-track
+    // continuity when it exists, while the lower dot is the selected
+    // destination.
     const prevCol = prevChosenIdx >= 0 ? prevChosenIdx : 0;
     const prevX = colCenterIn(prevCol, Math.max(1, prevItems.length));
     const chosenCol = chosenIdx >= 0 ? chosenIdx : 0;
@@ -2431,6 +2409,10 @@ function buildNodeMarkerInnerHtml(items, chosenUid, time, prevItem) {
     const chosenColor = chosenIdx >= 0
         ? getSessionAccentColor(items[chosenIdx].session, items[chosenIdx].session.Track)
         : 'currentColor';
+    const prevColor = (prevItems[prevChosenIdx] && prevItems[prevChosenIdx].session)
+        ? getSessionAccentColor(prevItems[prevChosenIdx].session,
+            prevItems[prevChosenIdx].session.Track)
+        : null;
 
     // Top stub: vertical line at prev-chosen x, drawn ABOVE row 1 to
     // attach into the card sitting above this marker. Render whenever
@@ -4323,6 +4305,7 @@ function buildInlineDecisionRow(decision, opts = {}) {
     // Unresolved decisions render the body as an orange nag; resolved
     // ones show "Going to / Staying in <Room>" with an Edit chip.
     const prevPathItem = opts.prevPathItem || null;
+    const markerPrevItem = opts.markerPrevItem || prevPathItem;
     const wrap = document.createElement('button');
     wrap.type = 'button';
     wrap.className = 'nn-node-row-wrap'
@@ -4331,7 +4314,7 @@ function buildInlineDecisionRow(decision, opts = {}) {
     const marker = document.createElement('span');
     marker.className = 'nn-node-marker';
     marker.innerHTML = buildNodeMarkerInnerHtml(
-        decision.items, decision.chosen, decision.start, prevPathItem);
+        decision.items, decision.chosen, decision.start, markerPrevItem);
     wrap.appendChild(marker);
 
     const body = document.createElement('span');
@@ -4532,7 +4515,7 @@ function buildForcedEdgeRow(item, prevPathItem, t) {
 // Render an ordered list of node events (decisions + forced edges)
 // inside the given wrapper. Used between sections and between
 // timeline slots.
-function renderPathNodeRows(wrap, nodes) {
+function renderPathNodeRows(wrap, nodes, renderedPrevItem = null) {
     nodes.forEach(n => {
         // Pass-level dedupe: a node may fall inside more than one
         // render window (Now\u2192Next, Next\u2192Thereafter, the timeline
@@ -4544,10 +4527,12 @@ function renderPathNodeRows(wrap, nodes) {
         }
         if (n.kind === 'decision') {
             wrap.appendChild(buildInlineDecisionRow(n.decision, {
-                prevPathItem: n.prevPathItem
+                prevPathItem: n.prevPathItem,
+                markerPrevItem: renderedPrevItem || n.prevPathItem
             }));
         } else if (n.kind === 'forced') {
-            wrap.appendChild(buildForcedEdgeRow(n.item, n.prevPathItem || null, n.t));
+            wrap.appendChild(buildForcedEdgeRow(
+                n.item, renderedPrevItem || n.prevPathItem || null, n.t));
         }
     });
 }
@@ -4605,6 +4590,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
         // (with no new starred starts and no path nodes) can be
         // skipped — the previous card already covers it.
         let lastShownChosenUid = null;
+        let lastRenderedLeadItem = null;
         // Timestamp of the previously processed slot, used to scoop
         // up any path nodes (decisions/forced edges) that occur
         // between slot starts so they don't fall into a gap and
@@ -4851,7 +4837,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
                 const nWrap = document.createElement('div');
                 nWrap.className = 'nn-decision-node'
                     + (isBetweenStayBridge ? ' nn-stay-bridge' : '');
-                renderPathNodeRows(nWrap, [n]);
+                renderPathNodeRows(nWrap, [n], lastRenderedLeadItem);
                 if (!nWrap.childElementCount) return;
                 container.appendChild(nWrap);
                 if (isBetweenStayBridge && prevSection) {
@@ -4894,6 +4880,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
                 ivSection.appendChild(ivBody);
                 container.appendChild(ivSection);
                 lastShownChosenUid = iv.chosen;
+                lastRenderedLeadItem = chosenItem;
                 prevSection = ivSection;
             });
 
@@ -4903,7 +4890,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
                 nodeWrap = document.createElement('div');
                 nodeWrap.className = 'nn-decision-node'
                     + (isStayBridge ? ' nn-stay-bridge' : '');
-                renderPathNodeRows(nodeWrap, atSlotNodes);
+                renderPathNodeRows(nodeWrap, atSlotNodes, lastRenderedLeadItem);
                 if (!nodeWrap.childElementCount) nodeWrap = null;
                 else container.appendChild(nodeWrap);
             }
@@ -4971,6 +4958,9 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
 
             // Update the carry-forward chosen uid for the next slot.
             lastShownChosenUid = chosenAt;
+            const displayedItems = renderItems.slice();
+            sortNowNextItems(displayedItems);
+            lastRenderedLeadItem = partitionFeaturedItems(displayedItems).featured[0] || null;
             lastShownSlotT = slotT;
             prevSection = section;
 
@@ -4987,7 +4977,7 @@ function renderFullDaySchedule(container, path, now, allItems, startAfter, skipS
             if (trailingNodes.length) {
                 const nodeWrap = document.createElement('div');
                 nodeWrap.className = 'nn-decision-node';
-                renderPathNodeRows(nodeWrap, trailingNodes);
+                renderPathNodeRows(nodeWrap, trailingNodes, lastRenderedLeadItem);
                 if (nodeWrap.childElementCount) container.appendChild(nodeWrap);
             }
         }

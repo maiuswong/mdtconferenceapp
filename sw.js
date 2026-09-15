@@ -1,5 +1,5 @@
 /* Service Worker for INCOSE HWGC 2026 Schedule PWA */
-const VERSION = 'v1.0.2';
+const VERSION = 'v1.0.3';
 const CACHE_NAME = `hwgc2026-${VERSION}`;
 
 // Resolve URLs relative to the SW's scope so this works on GitHub Pages
@@ -51,7 +51,7 @@ self.addEventListener('message', (event) => {
 
 // Strategy:
 // - Navigation/HTML requests: network-first, fall back to cached HTML (offline).
-// - Same-origin static assets: cache-first, then network, populate cache.
+// - Same-origin static assets: network-first, fall back to cache offline.
 // - Cross-origin (fonts, CDN script): stale-while-revalidate.
 self.addEventListener('fetch', (event) => {
   const req = event.request;
@@ -69,7 +69,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (sameOrigin) {
-    event.respondWith(cacheFirst(req));
+    event.respondWith(networkFirst(req));
     return;
   }
 
