@@ -1,7 +1,7 @@
 {
-  "name": "INCOSE HWGC 2026 Schedule",
-  "short_name": "HWGC 2026",
-  "description": "INCOSE Systems Engineering in Healthcare 2026 conference schedule.",
+  "name": "HRX 2026 Schedule",
+  "short_name": "HRX 2026",
+  "description": "HRX 2026 conference schedule.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
