@@ -1107,7 +1107,9 @@ function buildShareUrl(uids) {
     const base = location.origin && location.origin !== 'null'
         ? `${location.origin}${location.pathname}`
         : location.href.split('#')[0].split('?')[0];
-    return `${base}#share=${encodeStarsForShare(uids)}`;
+    // iOS standalone web apps can discard URL fragments when launched
+    // from a QR scan. Query parameters survive that launch handoff.
+    return `${base}?share=${encodeStarsForShare(uids)}`;
 }
 function showToast(message, durationMs = 2400) {
     const el = document.getElementById('appToast');
@@ -1210,16 +1212,21 @@ function shareStarredSchedule() {
     modal.classList.add('show');
 }
 function handleStarsImportFromHash() {
+    const queryShare = new URLSearchParams(location.search).get('share');
     const hash = location.hash || '';
-    const m = hash.match(/(?:^#|[#&])share=([^&]+)/);
-    if (!m) return;
-    const incoming = decodeStarsFromShare(m[1]);
+    const hashMatch = hash.match(/(?:^#|[#&])share=([^&]+)/);
+    const rawShare = queryShare || (hashMatch && hashMatch[1]);
+    if (!rawShare) return;
+    const incoming = decodeStarsFromShare(rawShare);
     // Restrict to UIDs that actually exist in the data.
     const knownUids = new Set();
     Object.keys(data).forEach(day => (data[day] || []).forEach(s => { if (s.uid) knownUids.add(s.uid); }));
     const valid = incoming.filter(uid => knownUids.has(uid));
-    // Clear the hash so it doesn't re-prompt on reload.
-    history.replaceState(null, '', location.pathname + location.search);
+    // Clear the processed import data so it doesn't re-prompt on reload.
+    const cleanUrl = new URL(location.href);
+    cleanUrl.searchParams.delete('share');
+    if (hashMatch) cleanUrl.hash = '';
+    history.replaceState(null, '', cleanUrl.pathname + cleanUrl.search + cleanUrl.hash);
     if (valid.length === 0) {
         showToast('Shared link had no matching sessions');
         return;

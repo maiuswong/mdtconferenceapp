@@ -1,5 +1,5 @@
 /* Service Worker for INCOSE HWGC 2026 Schedule PWA */
-const VERSION = 'v1.0.3';
+const VERSION = 'v1.0.4';
 const CACHE_NAME = `hwgc2026-${VERSION}`;
 
 // Resolve URLs relative to the SW's scope so this works on GitHub Pages
@@ -16,6 +16,9 @@ const PRECACHE_URLS = [
   './manifest.webmanifest',
   './icons/icon.svg',
   './icons/icon-maskable.svg',
+  './icons/apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
   // External assets used by the page. Cached opaquely; updated when network
   // is available.
   'https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600;700;900&family=DM+Mono:wght@400;500&display=swap',
