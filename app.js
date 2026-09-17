@@ -10,7 +10,7 @@ if ('scrollRestoration' in history) {
 // today-anchored dummy schedule. Useful for continuing development
 // after the conference has ended. Edit `buildDummyData()` below to
 // tweak times, tracks, conflicts, etc.
-const USE_DUMMY_DATA = false ;
+const USE_DUMMY_DATA = true ;
 
 // Override which calendar date the dummy schedule's "Day 1" anchors
 // to. Set to a 'YYYY-MM-DD' string (e.g. '2026-04-30') to pin the

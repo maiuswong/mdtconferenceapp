@@ -1558,7 +1558,7 @@ body.topbar-compact .track-chip {
     margin-top: -6px;
 }
 
-/* Free-time row: looks like a break-card but distinct (cooler tone, lighter background). */
+/* Free-time row: a calm, clearly non-session pause in the schedule. */
 .free-row {
     margin: 0;
     display: flex;
@@ -1571,10 +1571,11 @@ body.topbar-compact .track-chip {
     gap: 8px;
     font-size: 11px;
     line-height: 1.3;
-    padding: 4px 4px;
-    border: none;
-    background: transparent;
-    color: #4f6280;
+    padding: 7px 10px;
+    border: 1px dashed #9bb8d6;
+    border-radius: 6px;
+    background: #edf6fc;
+    color: #356783;
     font-weight: 600;
     letter-spacing: 0.02em;
     width: 100%;
@@ -1589,7 +1590,7 @@ body.topbar-compact .track-chip {
     flex-shrink: 0;
     width: 14px;
     height: 13px;
-    color: #6f8099;
+    color: #4983a7;
 }
 .free-chip .free-icon svg {
     width: 13px;
@@ -1598,11 +1599,11 @@ body.topbar-compact .track-chip {
 }
 .free-chip .free-amount {
     font-weight: 600;
-    color: #4f6280;
+    color: #356783;
     flex-shrink: 0;
 }
 .free-chip .free-window {
-    color: #6f8099;
+    color: #4983a7;
     font-weight: 500;
     flex-shrink: 1;
     overflow: hidden;
@@ -1611,7 +1612,7 @@ body.topbar-compact .track-chip {
 .free-chip .free-window::before {
     content: '·';
     margin-right: 8px;
-    color: #6f8099;
+    color: #4983a7;
     opacity: 0.55;
 }
 
@@ -2587,7 +2588,23 @@ body.topbar-compact .track-chip {
     background: transparent;
     padding: 0;
 }
-/* "Which talk are you in?" prompt: amber call-to-action
+/* A section containing only free time is a single pause state, not a
+   regular white session card with a tinted row inside it. */
+.nn-section:has(.nn-free-wrap) {
+    background: #dfeffc;
+    border: 1px dashed #7da9cc;
+    box-shadow: none;
+}
+.nn-section:has(.nn-free-wrap) .nn-section-title,
+.nn-section:has(.nn-free-wrap) .nn-section-time {
+    color: #356783;
+}
+.nn-section:has(.nn-free-wrap) .nn-free-wrap {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+/* "Which talk are you in?" prompt: blue decision call-to-action
    rendered above the Happening Now hero whenever the path's
    interval at `now` is an unresolved overlap (≥2 starred
    sessions, no resolution recorded). Resolving this single
@@ -2603,13 +2620,13 @@ body.topbar-compact .track-chip {
     width: 100%;
     padding: 12px 16px;
     border-radius: 12px;
-    background: rgba(254, 243, 199, 0.6);
-    border: 1px solid rgba(234, 88, 12, 0.45);
+    background: rgba(219, 234, 254, 0.68);
+    border: 1px solid rgba(37, 99, 235, 0.42);
     cursor: pointer;
     transition: background 0.12s;
 }
 .nn-now-prompt:hover {
-    background: rgba(254, 243, 199, 0.9);
+    background: rgba(191, 219, 254, 0.82);
 }
 .nn-now-prompt:focus-visible {
     outline: 2px solid var(--primary);
@@ -2620,7 +2637,7 @@ body.topbar-compact .track-chip {
     grid-row: 1;
     font-weight: 600;
     font-size: 0.95rem;
-    color: #92400e;
+    color: #1d4f91;
 }
 .nn-now-prompt-desc {
     grid-column: 1;
@@ -2634,7 +2651,7 @@ body.topbar-compact .track-chip {
     grid-row: 1 / span 2;
     align-self: center;
     font-size: 1.3rem;
-    color: #92400e;
+    color: #1d4f91;
     opacity: 0.75;
 }
 .nn-section.is-now {
@@ -3315,15 +3332,29 @@ button.nn-hero-hint:focus-visible .nn-hint-edit {
 .nn-hero-hint.is-move .nn-hint-icon { color: color-mix(in srgb, var(--text-secondary) 80%, var(--primary)); }
 .nn-hero-hint strong { font-weight: 700; letter-spacing: -0.005em; }
 
-/* Free-time row: structurally a session card but with "Free time"
-   as the title (the most important fact). Duration + window read
-   as the meta line below, exactly like a session's time · room.
-   No background or border — it inherits the row's rhythm. */
+/* Free-time rows are quiet, non-session pause panels. */
+.nn-free-wrap {
+    margin: 4px 0;
+    padding: 0 10px;
+    border: 1px dashed #9bb8d6;
+    border-radius: 6px;
+    background: #edf6fc;
+}
 .nn-free-row {
     cursor: default;
+    padding: 8px 0;
+    color: #356783;
 }
 .nn-free-row:hover::before {
     background: transparent;
+}
+.nn-free-row .nn-row-title,
+.nn-free-row .nn-row-time {
+    color: #356783;
+}
+.nn-free-row .nn-row-meta,
+.nn-free-row .nn-row-sep {
+    color: #4983a7;
 }
 .nn-free-title {
     display: inline-flex !important;
@@ -3333,7 +3364,7 @@ button.nn-hero-hint:focus-visible .nn-hint-edit {
 .nn-free-cup {
     width: 16px;
     height: 16px;
-    color: var(--text-secondary);
+    color: #4983a7;
     flex-shrink: 0;
 }
 .nn-section.is-now .nn-free-cup {
@@ -3544,11 +3575,11 @@ button.nn-hero-hint:focus-visible .nn-hint-edit {
     border-color: rgba(99, 102, 241, 0.25);
 }
 .nn-conflict-row.is-unresolved {
-    border-color: rgba(234, 88, 12, 0.45);
-    background: rgba(254, 243, 199, 0.45);
+    border-color: rgba(37, 99, 235, 0.38);
+    background: rgba(219, 234, 254, 0.58);
 }
 .nn-conflict-row.is-unresolved:hover {
-    background: rgba(254, 243, 199, 0.75);
+    background: rgba(191, 219, 254, 0.72);
 }
 .nn-conflict-dots {
     display: inline-flex;
@@ -3648,11 +3679,11 @@ button.nn-hero-hint:focus-visible .nn-hint-edit {
     transition: background 0.12s, border-color 0.12s;
 }
 .nn-inline-decision.is-unresolved {
-    background: rgba(254, 243, 199, 0.5);
-    border: 1px solid rgba(234, 88, 12, 0.45);
+    background: rgba(219, 234, 254, 0.58);
+    border: 1px solid rgba(37, 99, 235, 0.38);
 }
 .nn-inline-decision.is-unresolved:hover {
-    background: rgba(254, 243, 199, 0.8);
+    background: rgba(191, 219, 254, 0.72);
 }
 .nn-inline-decision.is-resolved {
     background: transparent;
@@ -3859,14 +3890,15 @@ button.nn-node-row-wrap:focus-visible {
     opacity: 0.7;
 }
 .nn-node-row-wrap.is-unresolved .nn-node-row-body {
-    color: #92400e;
+    color: #1d4f91;
     font-weight: 600;
 }
 .nn-node-row-wrap.is-unresolved {
-    background: rgba(254, 243, 199, 0.45);
+    background: rgba(219, 234, 254, 0.62);
+    border: 1px solid rgba(37, 99, 235, 0.38);
 }
 .nn-node-row-wrap.is-unresolved:hover {
-    background: rgba(254, 243, 199, 0.75);
+    background: rgba(191, 219, 254, 0.78);
 }
 .nn-node-row-wrap.is-forced {
     /* Forced edges are clickable buttons when there are
