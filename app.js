@@ -289,6 +289,19 @@ const trackColors = {
 
 const KEYNOTE_COLOR = '#3949AB';           // Indigo 600 — distinct from any track
 
+// Quiet Events headset channels. These room-led accents make it easy to
+// match a session in the schedule with the channel attendees should select.
+const channelColors = {
+    'main stage 1': '#2563EB',
+    'main stage 2': '#D9485F',
+    'roundtable 1': '#35A86B',
+    'roundtable 2': '#7C4DCC',
+    'roundtable 3': '#E0A800',
+    'connexions lounge': '#D96D17',
+    'hot takes exchange': '#D23D82',
+    'hrstv': '#168C8C'
+};
+
 // ─── ROOM ORDER (consistent columns) ───
 const ROOM_ORDER = [
     "Hyde Park",
@@ -477,7 +490,20 @@ function isKeynoteSession(session) {
     return (session?.type || '').toLowerCase() === 'keynote';
 }
 
+function getChannelColor(session) {
+    const room = String(session?.room || '').trim().toLowerCase();
+    const track = String(session?.Track || '').trim().toLowerCase();
+    for (const channel of Object.keys(channelColors)) {
+        if (room.includes(channel) || track.includes(channel)) {
+            return channelColors[channel];
+        }
+    }
+    return '';
+}
+
 function getSessionAccentColor(session, fallbackTrackName = '') {
+    const channelColor = getChannelColor(session);
+    if (channelColor) return channelColor;
     if (isKeynoteSession(session)) return KEYNOTE_COLOR;
     // Break/meal interlude colors — match the deep accent used by
     // the Now/Next interlude card text/border in styles.css so the
