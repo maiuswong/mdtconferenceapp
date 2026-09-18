@@ -299,7 +299,7 @@ const channelColors = {
     'roundtable 3': '#E0A800',
     'connexions lounge': '#D96D17',
     'hot takes exchange': '#D23D82',
-    'hrstv': '#168C8C'
+    'hrstv': '#28BFA8'
 };
 
 // ─── ROOM ORDER (consistent columns) ───
